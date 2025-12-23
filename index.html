@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cue The Line</title>
+  <link rel="stylesheet" href="style.css" />
+  <script data-goatcounter="https://cuetheline.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div>
+        <h1 id="title">Cue The Line</h1>
+        <p class="sub" id="subtitle">Daily movie-quote challenge</p>
+      </div>
+      <div class="meta">
+        <div class="pill" id="runId">QuoteRun</div>
+        <button class="linkbtn" id="howBtn" type="button">How</button>
+      </div>
+    </header>
+
+    <section class="card" id="yesterdayCard" hidden>
+      <div class="cardHead">
+        <h2>Yesterday’s answers</h2>
+        <button class="linkbtn" id="hideYesterdayBtn" type="button">Hide</button>
+      </div>
+      <div id="yesterdayList" class="yesterday"></div>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <div class="label">Quote</div>
+        <div class="badge" id="progressBadge">1 / 5</div>
+      </div>
+
+      <blockquote id="quoteText" class="quote">Loading…</blockquote>
+
+      <div class="hintRow">
+        <button class="hintBtn" id="hint1Btn" type="button">Hint 1</button>
+        <button class="hintBtn" id="hint2Btn" type="button">Hint 2</button>
+        <div class="hintUsed" id="hintUsed">Hints used: 0</div>
+      </div>
+
+      <div class="hints">
+        <div class="hintBox" id="hint1Box" hidden></div>
+        <div class="hintBox" id="hint2Box" hidden></div>
+      </div>
+
+      <div class="answerRow">
+        <input id="answerInput" type="text" placeholder="Type the movie name…" autocomplete="off" />
+        <button id="submitBtn" type="button">Submit</button>
+      </div>
+
+      <div class="status" id="status"></div>
+
+      <div class="resultArea" id="resultArea" hidden>
+        <div class="resultMsg" id="resultMsg"></div>
+        <div class="shareRow">
+          <button id="shareBtn" type="button">Share</button>
+          <button id="copyBtn" type="button">Copy</button>
+        </div>
+        <pre class="shareCard" id="shareCard"></pre>
+      </div>
+    </section>
+
+ <footer class="foot">
+  <div class="footLinks">
+    <span class="muted">Created by Atif Mumtaz</span>
+    <span class="dot">·</span>
+    <button id="aboutBtn" class="footLink" type="button">About</button>
+    <span class="dot">·</span>
+    <a class="footLink" href="privacy.html">Privacy</a>
+    <span class="dot">·</span>
+    <a class="footLink" href="terms.html">Terms</a>
+    <span class="dot">·</span>
+    <a class="footLink" href="https://cuetheline.com" target="_blank" rel="noopener"></a>
+  </div>
+
+  <div class="muted" style="margin-top:6px">
+    No cookies. No personal tracking. Anonymous, aggregated game stats only.
+  </div>
+</footer>
+
+  <dialog id="howDialog">
+    <div class="dlg">
+      <h3>How it works</h3>
+      <ul>
+        <li>You can answer up to <b>5</b> quotes.</li>
+        <li>The run ends on your <b>first wrong</b> answer.</li>
+        <li>Hints are optional. We track <b>Hints used</b> (no penalties).</li>
+        <li><b>We’ll reveal today’s answers tomorrow.</b></li>
+      </ul>
+      <div class="dlgBtns">
+        <button id="closeHowBtn" type="button">Close</button>
+      </div>
+    </div>
+  </dialog>
+
+<dialog id="aboutDialog">
+  <div class="dlg">
+    <h3>About Cue The Line</h3>
+
+    <p><b>Cue The Line</b> is a small daily game for people who love movie dialogue.</p>
+
+    <p>
+      Everyone gets the same five quotes each day. One wrong answer ends the run.
+      Answers are revealed the next day.
+    </p>
+
+    <p class="muted">
+      Intentionally lightweight — no accounts, no leaderboards, no personal tracking.
+      Just movies.
+    </p>
+
+    <p class="muted">Created by <b>XenStreet.com</b></p>
+
+    <div class="dlgBtns">
+      <button id="closeAboutBtn" type="button">Close</button>
+    </div>
+  </div>
+</dialog>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>

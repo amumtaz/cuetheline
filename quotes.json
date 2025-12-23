@@ -1,0 +1,192 @@
+{
+  "pool": [
+    {
+      "id": "q001",
+      "quote": "I’ll be back.",
+      "answers": ["the terminator", "terminator"],
+      "display": "The terminator",
+      "year": 1984,
+      "hint1": "1984",
+      "hint2": "Arnold Schwarzenegger",
+      "tier": 1
+    },
+    {
+      "id": "q002",
+      "quote": "You’re gonna need a bigger boat.",
+      "answers": ["jaws"],
+      "display": "Jaws",
+      "year": 1975,
+      "hint1": "1975",
+      "hint2": "Thriller / shark",
+      "tier": 1
+    },
+    {
+      "id": "q003",
+      "quote": "The only winning move is not to play.",
+      "answers": ["wargames", "war games"],
+      "display": "War Games",
+      "year": 1983,
+      "hint1": "1983",
+      "hint2": "Early hacker / AI classic",
+      "tier": 2
+    },
+    {
+      "id": "q004",
+      "quote": "There is no spoon.",
+      "answers": ["the matrix", "matrix"],
+      "display": "The Matrix",
+      "year": 1999,
+      "hint1": "1999",
+      "hint2": "Keanu Reeves",
+      "tier": 2
+    },
+    {
+      "id": "q005",
+      "quote": "I’m sorry, Dave. I’m afraid I can’t do that.",
+      "answers": ["2001 a space odyssey", "2001: a space odyssey", "2001"],
+      "display": "2001: A Space Odyssey",
+      "year": 1968,
+      "hint1": "1968",
+      "hint2": "HAL 9000",
+      "tier": 3
+    },
+    {
+      "id": "q006",
+      "quote": "Why so serious?",
+      "answers": ["the dark knight", "dark knight", "batman: dark knight"],
+      "display": "The Dark Knight",
+      "year": 2008,
+      "hint1": "2008",
+      "hint2": "Heath Ledger",
+      "tier": 2
+    },
+    {
+      "id": "q007",
+      "quote": "E.T. phone home.",
+      "answers": ["et", "e.t.", "e.t. the extra-terrestrial", "e.t. the extra terrestrial", "e t"],
+      "display": "E.T.",
+      "year": 1982,
+      "hint1": "1982",
+      "hint2": "Steven Spielberg",
+      "tier": 1
+    },
+    {
+      "id": "q008",
+      "quote": "I’m walking here! I’m walking here!",
+      "answers": ["midnight cowboy","cowboy midnight"],
+      "display": "Midnight Cowboy",
+      "year": 1969,
+      "hint1": "1969",
+      "hint2": "Dustin Hoffman",
+      "tier": 3
+    },
+    {
+      "id": "q009",
+      "quote": "Get busy living, or get busy dying.",
+      "answers": ["the shawshank redemption", "shawshank redemption", "shawshank"],
+      "display": "The Shawshank Redemption",
+      "year": 1994,
+      "hint1": "1994",
+      "hint2": "Prison drama",
+      "tier": 2
+    },
+    {
+      "id": "q010",
+      "quote": "Here’s looking at you, kid.",
+      "answers": ["casablanca"],
+      "display": "Casablanca",
+      "year": 1942,
+      "hint1": "1942",
+      "hint2": "Humphrey Bogart",
+      "tier": 2
+    },
+    {
+      "id": "q011",
+      "quote": "I am your father.",
+      "answers": ["the empire strikes back", "star wars episode v", "star wars: episode v - the empire strikes back", "empire strikes back"],
+      "display": "The Empire Strikes Back",
+      "year": 1980,
+      "hint1": "1980",
+      "hint2": "Darth Vader",
+      "tier": 2
+    },
+    {
+      "id": "q012",
+      "quote": "Hasta la vista, baby.",
+      "answers": ["terminator 2", "t2", "terminator 2 judgment day", "terminator 2: judgment day"],
+      "display": "Terminator 2: Judgment Day",
+      "year": 1991,
+      "hint1": "1991",
+      "hint2": "Arnold Schwarzenegger",
+      "tier": 1
+    },
+    {
+      "id": "q013",
+      "quote": "Nobody puts Baby in a corner.",
+      "answers": ["dirty dancing"],
+      "display": "Dirty Dancing",
+      "year": 1987,
+      "hint1": "1987",
+      "hint2": "Patrick Swayze",
+      "tier": 2
+    },
+    {
+      "id": "q014",
+      "quote": "You can’t handle the truth!",
+      "answers": ["a few good men"],
+      "display": "A few good men",
+      "year": 1992,
+      "hint1": "1992",
+      "hint2": "Courtroom drama",
+      "tier": 2
+    },
+    {
+      "id": "q015",
+      "quote": "I’ll have what she’s having.",
+      "answers": ["when harry met sally"],
+      "display": "When Harry met Sally",
+      "year": 1989,
+      "hint1": "1989",
+      "hint2": "Rom-com in NYC",
+      "tier": 3
+    },
+    {
+      "id": "q016",
+      "quote": "I see dead people.",
+      "answers": ["the sixth sense", "sixth sense"],
+      "display": "The Sixth Sense",
+      "year": 1999,
+      "hint1": "1999",
+      "hint2": "M. Night Shyamalan",
+      "tier": 1
+    },
+    {
+      "id": "q017",
+      "quote": "This is the beginning of a beautiful friendship.",
+      "answers": ["casablanca"],
+      "display": "Casablanca",
+      "year": 1942,
+      "hint1": "1942",
+      "hint2": "Airport fog scene",
+      "tier": 3
+    },
+    {
+      "id": "q018",
+      "quote": "I’m gonna make him an offer he can’t refuse.",
+      "answers": ["the godfather", "godfather"],
+      "display": "The Godfather",
+      "year": 1972,
+      "hint1": "1972",
+      "hint2": "Marlon Brando",
+      "tier": 2
+    }
+  ],
+  "perfect_closers": [
+    { "quote": "Well, nobody’s perfect.", "source": "Some Like It Hot" },
+    { "quote": "You did good.", "source": "Good Will Hunting" },
+    { "quote": "Here’s looking at you, kid.", "source": "Casablanca" },
+    { "quote": "That’ll do.", "source": "Babe" },
+    { "quote": "What a lovely feeling.", "source": "Singin’ in the Rain" },
+    { "quote": "You’ve got a friend.", "source": "Toy Story" }
+  ]
+}
