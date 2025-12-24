@@ -23,6 +23,21 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 480px) {
+  .wrap {
+    padding: 16px 14px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   background: var(--bg-dark);
@@ -45,8 +60,32 @@ body {
   margin-bottom: 18px;
 }
 
+/* ---------- Logo / Brand ---------- */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  height: 56px;     /* tweak: 40–56px if needed */
+  width: auto;
+  display: block;
+}
+
+.brandText h1 {
+  margin: 0;
+}
+
+.brandText .sub {
+  margin-top: 4px;
+}
+
+
+
 h1 {
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 900;
   letter-spacing: -0.5px;
 }
@@ -87,6 +126,9 @@ h1 {
   padding: 24px;
   box-shadow: 0 20px 50px rgba(0,0,0,.4);
   margin-bottom: 20px;
+  max-width: 100%;
+  overflow-x: hidden;
+
 }
 
 .row {
@@ -259,7 +301,12 @@ button#copyBtn {
   border-radius: var(--radius-md);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 13px;
-  white-space: pre;
+
+  white-space: pre-wrap;     /* ✅ allow wrapping */
+  word-break: break-word;   /* ✅ break long URLs */
+  overflow-wrap: anywhere;  /* ✅ Safari-safe */
+
+  max-width: 100%;
 }
 
 /* -------- Footer -------- */
