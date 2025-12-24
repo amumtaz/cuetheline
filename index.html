@@ -75,7 +75,7 @@
 
  <footer class="foot">
   <div class="footLinks">
-    <span class="muted">Created by XenStreet</span>
+    <span class="muted">(c)</span>
     <a href="#" id="aboutLink">About</a> ·
     <a href="privacy.html">Privacy</a> ·
     <a href="terms.html">Terms</a>
@@ -91,9 +91,10 @@
       <h3>How it works</h3>
       <ul>
         <li>You can answer up to <b>5</b> quotes.</li>
-        <li>The run ends on your <b>first wrong</b> answer.</li>
+        <li>Try to answer all of them — there’s <b>no early ending</b>.</li>
         <li>Hints are optional. We track <b>Hints used</b> (no penalties).</li>
-        <li><b>We’ll reveal today’s answers tomorrow.</b></li>
+        <li>You’ll get a <b>score at the end</b>, and today’s answers are revealed tomorrow.</li>
+        <li>Come back tomorrow for a new set — some days are tougher than others..</li>
       </ul>
       <div class="dlgBtns">
         <button id="closeHowBtn" type="button">Close</button>
@@ -108,7 +109,7 @@
     <p><b>Cue The Line</b> is a small daily game for people who love movie dialogue.</p>
 
     <p>
-      Everyone gets the same five quotes each day. One wrong answer ends the run.
+      Everyone gets the same five quotes each day. Try to answer all five as best as you can. You’ll get a score at the end — and you can share it to challenge others.
       Answers are revealed the next day.
     </p>
 
@@ -117,7 +118,7 @@
       Just movies.
     </p>
 
-    <p>Created by <b>XenStreet Technologies</b></p>
+    <p>Created by <b>© XenStreet Technologiess</b></p>
 
     <div class="dlgBtns">
       <button id="closeAboutBtn" type="button">Close</button>
@@ -138,6 +139,13 @@ if (aboutLink) {
   aboutLink.addEventListener("click", (e) => {
     e.preventDefault();
     aboutDialog.showModal();
+  });
+}
+
+const closeAboutBtn = document.getElementById("closeAboutBtn");
+if (closeAboutBtn) {
+  closeAboutBtn.addEventListener("click", () => {
+    aboutDialog.close();
   });
 }
 </script>

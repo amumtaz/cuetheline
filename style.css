@@ -23,13 +23,17 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 480px) {
-  .wrap {
-    padding: 16px 14px;
+@media (max-width: 420px) {
+  .brand {
+    gap: 10px;
   }
 
-  .card {
-    padding: 18px;
+  .logo {
+    height: 44px;
+  }
+
+  h1 {
+    font-size: 24px;
   }
 }
 
@@ -171,12 +175,17 @@ h1 {
 }
 
 .hintBtn {
-  background: rgba(255,255,255,.65);
+  background: rgba(255,255,255,.5);
+  font-size: 12px;
   border: none;
   color: var(--ink-dark);
   padding: 8px 14px;
   border-radius: var(--radius-pill);
   cursor: pointer;
+}
+
+.hintBtn:hover:not([disabled]) {
+  background: rgba(255,255,255,.7);
 }
 
 .hintBtn[disabled] {
@@ -257,7 +266,7 @@ button#submitBtn:disabled:hover {
   color: var(--ink-light);
   border-radius: var(--radius-lg);
   border-top: 4px solid #caff2a;
-  padding: 18px;
+  padding: 20px;
 }
 
 .resultMsg {
@@ -270,6 +279,10 @@ button#submitBtn:disabled:hover {
 .resultMsg div {
   font-size: 15px;
   font-weight: 500;
+}
+
+.resultMsg div + div {
+  margin-top: 4px;
 }
 
 .resultMsg .muted {

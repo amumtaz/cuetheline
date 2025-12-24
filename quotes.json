@@ -43,7 +43,7 @@
     {
       "id": "q005",
       "quote": "I’m sorry, Dave. I’m afraid I can’t do that.",
-      "answers": ["2001 a space odyssey", "2001: a space odyssey", "2001"],
+      "answers": ["2001 a space odyssey", "2001: a space odyssey", "2001", "space odyssey"],
       "display": "2001: A Space Odyssey",
       "year": 1968,
       "hint1": "1968",
@@ -53,7 +53,7 @@
     {
       "id": "q006",
       "quote": "Why so serious?",
-      "answers": ["the dark knight", "dark knight", "batman: dark knight"],
+      "answers": ["the dark knight", "dark knight", "batman: dark knight","batman"],
       "display": "The Dark Knight",
       "year": 2008,
       "hint1": "2008",
@@ -179,7 +179,459 @@
       "hint1": "1972",
       "hint2": "Marlon Brando",
       "tier": 2
-    }
+    },
+    {
+      "id": "q019",
+      "quote": "May the Force be with you.",
+      "answers": ["star wars", "star wars a new hope", "a new hope"],
+      "display": "Star Wars: A New Hope",
+      "year": 1977,
+      "hint1": "1977",
+      "hint2": "George Lucas",
+      "tier": 1
+    },
+    {
+      "id": "q020",
+      "quote": "You talking to me?",
+      "answers": ["taxi driver"],
+      "display": "Taxi Driver",
+      "year": 1976,
+      "hint1": "1976",
+      "hint2": "Robert De Niro",
+      "tier": 2
+    },
+    {
+      "id": "q021",
+      "quote": "Here’s Johnny!",
+      "answers": ["the shining", "shining"],
+      "display": "The Shining",
+      "year": 1980,
+      "hint1": "1980",
+      "hint2": "Stanley Kubrick",
+      "tier": 1
+    },
+    {
+      "id": "q022",
+      "quote": "Life is like a box of chocolates.",
+      "answers": ["forrest gump"],
+      "display": "Forrest Gump",
+      "year": 1994,
+      "hint1": "1994",
+      "hint2": "Tom Hanks",
+      "tier": 1
+    },
+    {
+      "id": "q023",
+      "quote": "I love the smell of napalm in the morning.",
+      "answers": ["apocalypse now"],
+      "display": "Apocalypse Now",
+      "year": 1979,
+      "hint1": "1979",
+      "hint2": "Vietnam war film",
+      "tier": 2
+    },
+    {
+      "id": "q024",
+      "quote": "They may take our lives, but they'll never take our freedom!",
+      "answers": ["braveheart"],
+      "display": "Braveheart",
+      "year": 1995,
+      "hint1": "1995",
+      "hint2": "William Wallace",
+      "tier": 2
+    },
+    {
+      "id": "q025",
+      "quote": "I feel the need—the need for speed!",
+      "answers": ["top gun"],
+      "display": "Top Gun",
+      "year": 1986,
+      "hint1": "1986",
+      "hint2": "Fighter pilots",
+      "tier": 1
+    },
+    {
+      "id": "q026",
+      "quote": "Houston, we have a problem.",
+      "answers": ["apollo 13"],
+      "display": "Apollo 13",
+      "year": 1995,
+      "hint1": "1995",
+      "hint2": "NASA mission",
+      "tier": 1
+    },
+    {
+      "id": "q027",
+      "quote": "You shall not pass!",
+      "answers": ["the lord of the rings the fellowship of the ring", "fellowship of the ring", "lotr"],
+      "display": "The Fellowship of the Ring",
+      "year": 2001,
+      "hint1": "2001",
+      "hint2": "Gandalf",
+      "tier": 1
+    },
+    {
+      "id": "q028",
+      "quote": "Why do we fall?",
+      "answers": ["batman begins", "batman"],
+      "display": "Batman Begins",
+      "year": 2005,
+      "hint1": "2005",
+      "hint2": "Christopher Nolan",
+      "tier": 2
+    },
+    {
+      "id": "q029",
+      "quote": "Say hello to my little friend!",
+      "answers": ["scarface"],
+      "display": "Scarface",
+      "year": 1983,
+      "hint1": "1983",
+      "hint2": "Tony Montana",
+      "tier": 2
+    },
+    {
+      "id": "q030",
+      "quote": "I am serious. And don't call me Shirley.",
+      "answers": ["airplane"],
+      "display": "Airplane!",
+      "year": 1980,
+      "hint1": "1980",
+      "hint2": "Spoof comedy",
+      "tier": 3
+    },
+    {
+      "id": "q031",
+      "quote": "I wish I knew how to quit you.",
+      "answers": ["brokeback mountain"],
+      "display": "Brokeback Mountain",
+      "year": 2005,
+      "hint1": "2005",
+      "hint2": "Modern western romance",
+      "tier": 3
+    },
+    {
+      "id": "q032",
+      "quote": "Roads? Where we're going, we don't need roads.",
+      "answers": ["back to the future"],
+      "display": "Back to the Future",
+      "year": 1985,
+      "hint1": "1985",
+      "hint2": "Time travel",
+      "tier": 1
+    },
+    {
+      "id": "q033",
+      "quote": "To infinity and beyond!",
+      "answers": ["toy story"],
+      "display": "Toy Story",
+      "year": 1995,
+      "hint1": "1995",
+      "hint2": "Pixar debut",
+      "tier": 1
+    },
+    {
+      "id": "q034",
+      "quote": "I'm king of the world!",
+      "answers": ["titanic"],
+      "display": "Titanic",
+      "year": 1997,
+      "hint1": "1997",
+      "hint2": "James Cameron",
+      "tier": 1
+    },
+    {
+      "id": "q035",
+      "quote": "My precious.",
+      "answers": ["the lord of the rings the two towers", "the two towers", "lord of the rings", "lotr"],
+      "display": "The Two Towers",
+      "year": 2002,
+      "hint1": "2002",
+      "hint2": "Gollum",
+      "tier": 2
+    },
+    {
+      "id": "q036",
+      "quote": "Gentlemen, you can't fight in here! This is the War Room!",
+      "answers": ["dr strangelove", "dr. strangelove", "strangelove"],
+      "display": "Dr. Strangelove",
+      "year": 1964,
+      "hint1": "1964",
+      "hint2": "Cold War satire",
+      "tier": 3
+    },
+    {
+      "id": "q037",
+      "quote": "It's a trap!",
+      "answers": ["return of the jedi", "star wars episode vi", "star wars episode vi return of the jedi", "star wars episode vi"],
+      "display": "Return of the Jedi",
+      "year": 1983,
+      "hint1": "1983",
+      "hint2": "Admiral Ackbar",
+      "tier": 1
+    },
+    {
+      "id": "q038",
+      "quote": "Do. Or do not. There is no try.",
+      "answers": ["the empire strikes back", "star wars episode v", "empire strikes back", "star wars episode v"],
+      "display": "The Empire Strikes Back",
+      "year": 1980,
+      "hint1": "1980",
+      "hint2": "Yoda",
+      "tier": 1
+    },
+    {
+      "id": "q039",
+      "quote": "I've got a bad feeling about this.",
+      "answers": ["star wars", "a new hope", "the empire strikes back", "return of the jedi", "star wars episode vi"],
+      "display": "Star Wars (Saga)",
+      "year": 1977,
+      "hint1": "Repeated across the saga",
+      "hint2": "Every Star Wars fan knows this",
+      "tier": 2
+    },
+    {
+      "id": "q040",
+      "quote": "Never tell me the odds!",
+      "answers": ["the empire strikes back", "empire strikes back", "star wars episode v"],
+      "display": "The Empire Strikes Back",
+      "year": 1980,
+      "hint1": "1980",
+      "hint2": "Han Solo",
+      "tier": 2
+    },
+    {
+      "id": "q041",
+      "quote": "So this is how liberty dies… with thunderous applause.",
+      "answers": ["revenge of the sith", "star wars episode iii"],
+      "display": "Revenge of the Sith",
+      "year": 2005,
+      "hint1": "2005",
+      "hint2": "Prequel era",
+      "tier": 3
+    },
+    {
+      "id": "q042",
+      "quote": "Great Scott!",
+      "answers": ["back to the future", "back to the future part ii", "back to the future part iii"],
+      "display": "Back to the Future (Trilogy)",
+      "year": 1985,
+      "hint1": "1985",
+      "hint2": "Doc Brown",
+      "tier": 1
+    },
+    {
+      "id": "q043",
+      "quote": "If my calculations are correct, when this baby hits 88 miles per hour...",
+      "answers": ["back to the future"],
+      "display": "Back to the Future",
+      "year": 1985,
+      "hint1": "1985",
+      "hint2": "Time travel experiment",
+      "tier": 1
+    },
+    {
+      "id": "q044",
+      "quote": "Roads? Where we're going, we don't need roads.",
+      "answers": ["back to the future"],
+      "display": "Back to the Future",
+      "year": 1985,
+      "hint1": "1985",
+      "hint2": "Delorean ending scene",
+      "tier": 1
+    },
+    {
+      "id": "q045",
+      "quote": "Your kids are gonna love it.",
+      "answers": ["back to the future"],
+      "display": "Back to the Future",
+      "year": 1985,
+      "hint1": "1985",
+      "hint2": "Johnny B. Goode scene",
+      "tier": 2
+    },
+    {
+      "id": "q046",
+      "quote": "Nobody calls me chicken.",
+      "answers": ["back to the future part ii", "back to the future part iii", "Back to the future"],
+      "display": "Back to the Future Part II",
+      "year": 1989,
+      "hint1": "1989",
+      "hint2": "Marty McFly trigger word",
+      "tier": 3
+    },
+    {
+      "id": "q047",
+      "quote": "I am Iron Man.",
+      "answers": ["iron man", "avengers endgame", "the avengers", "avengers"],
+      "display": "Iron Man / Avengers: Endgame",
+      "year": 2008,
+      "hint1": "2008",
+      "hint2": "Tony Stark",
+      "tier": 1
+    },
+    {
+      "id": "q048",
+      "quote": "Hulk smash!",
+      "answers": ["the avengers", "avengers"],
+      "display": "The Avengers",
+      "year": 2012,
+      "hint1": "2012",
+      "hint2": "Green rage monster",
+      "tier": 1
+    },
+    {
+      "id": "q049",
+      "quote": "Wakanda forever!",
+      "answers": ["black panther"],
+      "display": "Black Panther",
+      "year": 2018,
+      "hint1": "2018",
+      "hint2": "Marvel Africa",
+      "tier": 1
+    },
+    {
+      "id": "q050",
+      "quote": "We have a Hulk.",
+      "answers": ["the avengers", "avengers"],
+      "display": "The Avengers",
+      "year": 2012,
+      "hint1": "2012",
+      "hint2": "Loki vs Avengers",
+      "tier": 2
+    },
+    {
+      "id": "q051",
+      "quote": "That's my secret, Cap. I'm always angry.",
+      "answers": ["the avengers", "avengers"],
+      "display": "The Avengers",
+      "year": 2012,
+      "hint1": "2012",
+      "hint2": "Bruce Banner",
+      "tier": 2
+    },
+    {
+      "id": "q052",
+      "quote": "I can do this all day.",
+      "answers": ["captain america the first avenger", "captain america", "avengers endgame"],
+      "display": "Captain America: The First Avenger",
+      "year": 2011,
+      "hint1": "2011",
+      "hint2": "Steve Rogers",
+      "tier": 2
+    },
+    {
+      "id": "q053",
+      "quote": "On your left.",
+      "answers": ["avengers endgame", "avengers"],
+      "display": "Avengers: Endgame",
+      "year": 2019,
+      "hint1": "2019",
+      "hint2": "Portals scene",
+      "tier": 3
+    },
+    {
+      "id": "q054",
+      "quote": "I went for the head.",
+      "answers": ["avengers infinity war", "avengers"],
+      "display": "Avengers: Infinity War",
+      "year": 2018,
+      "hint1": "2018",
+      "hint2": "Thanos",
+      "tier": 3
+    },
+    {
+      "id": "q055",
+      "quote": "Dormammu, I've come to bargain.",
+      "answers": ["doctor strange"],
+      "display": "Doctor Strange",
+      "year": 2016,
+      "hint1": "2016",
+      "hint2": "Time loop",
+      "tier": 3
+    },
+    {
+      "id": "q056",
+      "quote": "With great power comes great responsibility.",
+      "answers": [
+        "spider man",
+        "spiderman",
+        "spider-man",
+        "spider man 2002"
+      ],
+      "display": "Spider-Man",
+      "year": 2002,
+      "hint1": "2002",
+      "hint2": "Uncle Ben",
+      "tier": 1
+    },
+    {
+      "id": "q057",
+      "quote": "I'm Spider-Man.",
+      "answers": [
+        "spider man",
+        "spiderman",
+        "spider-man"
+      ],
+      "display": "Spider-Man",
+      "year": 2002,
+      "hint1": "2002",
+      "hint2": "Tobey Maguire",
+      "tier": 1
+    },
+    {
+      "id": "q058",
+      "quote": "You know, I'm something of a scientist myself.",
+      "answers": [
+        "spider man",
+        "spiderman",
+        "spider-man"
+      ],
+      "display": "Spider-Man",
+      "year": 2002,
+      "hint1": "2002",
+      "hint2": "Green Goblin",
+      "tier": 2
+    },
+    {
+      "id": "q059",
+      "quote": "Everyone deserves a second chance.",
+      "answers": [
+        "the amazing spider man", "spider man", "spiderman",
+        "amazing spider-man"
+      ],
+      "display": "The Amazing Spider-Man",
+      "year": 2012,
+      "hint1": "2012",
+      "hint2": "Andrew Garfield",
+      "tier": 2
+    },
+    {
+      "id": "q060",
+      "quote": "I don't feel so good.",
+      "answers": [
+        "avengers infinity war", "avengers",
+        "infinity war"
+      ],
+      "display": "Avengers: Infinity War",
+      "year": 2018,
+      "hint1": "2018",
+      "hint2": "The Snap",
+      "tier": 3
+    },
+    {
+      "id": "q061",
+      "quote": "If you expect disappointment, then you can never really be disappointed.",
+      "answers": [
+        "spider man no way home",
+        "no way home", "spider man", "spiderman"
+      ],
+      "display": "Spider-Man: No Way Home",
+      "year": 2021,
+      "hint1": "2021",
+      "hint2": "Multiverse",
+      "tier": 3
+    },
   ],
   "perfect_closers": [
     { "quote": "Well, nobody’s perfect.", "source": "Some Like It Hot" },

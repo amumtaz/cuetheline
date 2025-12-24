@@ -1,17 +1,18 @@
 // app.js
-// Movie Quotes v0.1 (no backend)
+// Movie Quotes v0.2 (no backend)
 // - Daily shared set of 5 quotes, chosen via constrained rotation (simple version here)
 // - First wrong ends run
 // - Hints optional; tracked
 // - Yesterday answers revealed next day (local to device)
-// NOTE: This v0.1 uses deterministic daily selection with a cooldown-ish shuffle,
+// NOTE: This v0.2 uses deterministic daily selection with a cooldown-ish shuffle,
 //       but without a server it can't enforce global cooldown across all users.
 //       It *is* identical for everyone because it's derived from the date.
-// Writen by Atif Mumtaz
-// version 0.1
+//       
+// Author by Atif Mumtaz
+// version 0.2
 
 
-const STORAGE_KEY = "mq_v01_state";
+const STORAGE_KEY = "mq_v02_state";
 const START_DATE_UTC = "2025-01-01"; // any fixed anchor date
 
 // ------- DOM -------
@@ -39,21 +40,6 @@ const hideYesterdayBtn = document.getElementById("hideYesterdayBtn");
 const howBtn = document.getElementById("howBtn");
 const howDialog = document.getElementById("howDialog");
 const closeHowBtn = document.getElementById("closeHowBtn");
-
-
-
-const aboutBtn = document.getElementById("aboutBtn");
-const aboutDialog = document.getElementById("aboutDialog");
-const closeAboutBtn = document.getElementById("closeAboutBtn");
-
-if (aboutBtn && aboutDialog) {
-  aboutBtn.addEventListener("click", () => aboutDialog.showModal());
-}
-if (closeAboutBtn && aboutDialog) {
-  closeAboutBtn.addEventListener("click", () => aboutDialog.close());
-}
-
-
 
 const PLAY_URL = "https://cuetheline.com/";
 
@@ -122,7 +108,7 @@ function pickDeterministicDailySet(pool, dayIndex) {
     byTier.set(t, arr);
   }
 
-  const desired = [1, 2, 2, 3, 3]; // v0.1
+  const desired = [1, 2, 2, 3, 3]; // v0.2
   const chosen = [];
   for (const t of desired) {
     const arr = byTier.get(t) || [];
@@ -172,7 +158,7 @@ function buildShareCard(stateForToday) {
   if (streak === 5) {
     line2 = "Perfect 5/5";
   } else {
-    line2 = `Streak: ${streak}/5`;
+    line2 = `Score: ${streak}/5`;
   }
 
   return [
@@ -208,9 +194,8 @@ function getTodayState() {
       hintsUsed: 0,
       hint1Shown: {},
       hint2Shown: {},
-      ended: false,
-      endedAt: null,
-      endReason: null,
+      completed: false,     // ✅ NEW
+      completedAt: null,    // ✅ NEW
       setIds: []
     };
   }
@@ -309,52 +294,6 @@ function updateUIForQuote(tState) {
   setStatus("");
 }
 
-function endRun(tState, reason) {
-  track("run_end", {
-    reason: reason,
-    correct: tState.correctCount,
-    hints_used: tState.hintsUsed
-  });
-
-  tState.ended = true;
-  tState.endedAt = Date.now();
-  tState.endReason = reason;
-  saveState(state);
-
-  // show result messaging
-  resultArea.hidden = false;
-  const streak = tState.correctCount;
-
-
-
-  if (reason === "wrong") {
-    resultMsg.innerHTML = `<div><b>That one got a lot of people today.</b></div>
-                           <div>You made it to ${streak} out of 5.</div>
-                           <div class="muted" style="margin-top:6px">We’ll reveal today’s answers tomorrow.</div>`;
-  } else if (reason === "perfect") {
-    // Option A + closer quote
-    const closer = pickCloser(dayIndex);
-    resultMsg.innerHTML = `<div><b>That’s a perfect run.</b></div>
-                           <div>You got all 5 today.</div>
-                           <div class="muted" style="margin-top:10px;font-style:italic">“${escapeHtml(closer.quote)}”</div>
-                           <div class="muted">— ${escapeHtml(closer.source)}</div>`;
-  }
-
-  // share card
-  shareCardEl.textContent = buildShareCard(tState);
-
-  // lock inputs
-  submitBtn.disabled = true;
-  answerInput.disabled = true;
-  hint1Btn.disabled = true;
-  hint2Btn.disabled = true;
-
-  // hide progress badge once run ends
-  progressBadge.hidden = true;
-
-  // reveal yesterday section if available
-  renderYesterdayIfAvailable();
-}
 
 function pickCloser(dayIdx) {
   if (!closers.length) return { quote: "Well, nobody’s perfect.", source: "Some Like It Hot" };
@@ -397,7 +336,7 @@ async function init() {
   saveState(state);
 
   // If run already ended today, show final state
-  if (tState.ended) {
+  if (tState.completed) {
     // show last known share card + message
     progressBadge.hidden = true;
     submitBtn.disabled = true;
@@ -407,27 +346,22 @@ async function init() {
 
     // Build "marks" display
     quoteText.textContent = "Today’s run is complete.";
-    progressBadge.textContent = `${clamp(tState.marks.length, 0, 5)} / 5`;
-
+    //progressBadge.textContent = `${clamp(tState.marks.length, 0, 5)} / 5`;
     resultArea.hidden = false;
-    if (tState.endReason === "wrong") {
-      resultMsg.innerHTML = `<div><b>That one got a lot of people today.</b></div>
-                             <div>You made it to ${tState.correctCount} out of 5.</div>
-                             <div class="muted" style="margin-top:6px">We’ll reveal today’s answers tomorrow.</div>`;
-    } else {
-      const closer = pickCloser(dayIndex);
-      resultMsg.innerHTML = `<div><b>That’s a perfect run.</b></div>
-                             <div>You got all 5 today.</div>
-                             <div class="muted" style="margin-top:10px;font-style:italic">“${escapeHtml(closer.quote)}”</div>
-                             <div class="muted">— ${escapeHtml(closer.source)}</div>`;
-    }
+
+    resultMsg.innerHTML = `
+      <div><b>Here’s how you did today:</b></div>
+      <div style="margin-top:6px">Score: ${tState.correctCount} / 5</div>
+    `;
+
     shareCardEl.textContent = buildShareCard(tState);
     renderYesterdayIfAvailable();
     return;
+
   }
 
   // Otherwise render first quote (or resume)
-  currentIdx = tState.correctCount; // since first wrong ends, correctCount is position
+  currentIdx = tState.marks.length; //  • Marks length = how many questions attempted
   updateUIForQuote(tState);
   renderYesterdayIfAvailable();
 }
@@ -468,7 +402,7 @@ hint2Btn.addEventListener("click", () => {
 submitBtn.addEventListener("click", () => {
   const tState = getTodayState();
   const q = dailySet[currentIdx];
-  if (!q || tState.ended) return;
+  if (!q || tState.completed) return;
 
   const ans = answerInput.value;
   if (!ans.trim()) {
@@ -478,30 +412,32 @@ submitBtn.addEventListener("click", () => {
 
   const ok = matchesAnswer(ans, q);
 
+  // record result
+  tState.marks.push(ok ? "✅" : "❌");
   if (ok) {
     tState.correctCount += 1;
-    tState.marks.push("✅");
-    saveState(state);
     track("answer_correct", { index: currentIdx + 1 });
-
-    if (tState.correctCount >= 5) {
-      endRun(tState, "perfect");
-      return;
-    }
-
-    currentIdx = tState.correctCount;
-    setStatus("Correct.", "ok");
-    setTimeout(() => {
-      const fresh = getTodayState();
-      updateUIForQuote(fresh);
-    }, 450);
   } else {
-    tState.marks.push("❌");
-    saveState(state);
     track("answer_wrong", { index: currentIdx + 1 });
-    endRun(tState, "wrong");
   }
-});
+
+  saveState(state);
+
+  // move forward
+  currentIdx += 1;
+
+  // finished all 5?
+  if (currentIdx >= 5) {
+    finishRun(tState);
+    return;
+  }
+
+  // continue
+  setStatus(ok ? "Correct." : "Not quite.", ok ? "ok" : "bad");
+  setTimeout(() => {
+    updateUIForQuote(getTodayState());
+  }, 450);
+  });
 
 answerInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") submitBtn.click();
@@ -545,3 +481,31 @@ init().catch(() => {
   quoteText.textContent = "Could not load quotes.json";
   setStatus("Make sure quotes.json is in the same folder as index.html", "bad");
 });
+
+function finishRun(tState) {
+  tState.completed = true;
+  tState.completedAt = Date.now();
+  saveState(state);
+
+  track("run_completed", {
+    score: tState.correctCount,
+    hints_used: tState.hintsUsed
+  });
+
+  // UI lock
+  submitBtn.disabled = true;
+  answerInput.disabled = true;
+  hint1Btn.disabled = true;
+  hint2Btn.disabled = true;
+  progressBadge.hidden = true;
+
+  // Result message (v0.2 copy)
+  resultArea.hidden = false;
+  resultMsg.innerHTML = `
+    <div><b>Here’s how you did today:</b></div>
+    <div style="margin-top:6px">Score: ${tState.correctCount} / 5</div>
+  `;
+
+  shareCardEl.textContent = buildShareCard(tState);
+  renderYesterdayIfAvailable();
+}
