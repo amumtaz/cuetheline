@@ -167,7 +167,7 @@ function buildShareCard(stateForToday) {
     line2,
     `Hints used: ${hintsUsed}`,
     "",
-    `Can you best my score?: ${PLAY_URL}`
+    `Take the movie trivia challenge: ${PLAY_URL}`
   ].join("\n");
 }
 

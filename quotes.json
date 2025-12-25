@@ -631,6 +631,136 @@
       "hint1": "2021",
       "hint2": "Multiverse",
       "tier": 3
+    },
+    {
+      "id": "q062",
+      "quote": "Yippee-ki-yay.",
+      "answers": ["die hard"],
+      "display": "Die Hard",
+      "year": 1988,
+      "hint1": "1988",
+      "hint2": "Christmas action classic",
+      "tier": 1
+    },
+    {
+      "id": "q063",
+      "quote": "Come out to the coast, we’ll get together, have a few laughs…",
+      "answers": ["die hard"],
+      "display": "Die Hard",
+      "year": 1988,
+      "hint1": "1988",
+      "hint2": "John McClane monologue",
+      "tier": 2
+    },
+    {
+      "id": "q064",
+      "quote": "Keep the change, ya filthy animal.",
+      "answers": ["home alone"],
+      "display": "Home Alone",
+      "year": 1990,
+      "hint1": "1990",
+      "hint2": "Fake gangster movie",
+      "tier": 1
+    },
+    {
+      "id": "q065",
+      "quote": "This is my house. I have to defend it.",
+      "answers": ["home alone"],
+      "display": "Home Alone",
+      "year": 1990,
+      "hint1": "1990",
+      "hint2": "Kevin McCallister",
+      "tier": 1
+    },
+    {
+      "id": "q066",
+      "quote": "To me, you are perfect.",
+      "answers": ["love actually"],
+      "display": "Love Actually",
+      "year": 2003,
+      "hint1": "2003",
+      "hint2": "Cue cards scene",
+      "tier": 1
+    },
+    {
+      "id": "q067",
+      "quote": "Love actually is all around.",
+      "answers": ["love actually"],
+      "display": "Love Actually",
+      "year": 2003,
+      "hint1": "2003",
+      "hint2": "Holiday ensemble romance",
+      "tier": 2
+    },
+    {
+      "id": "q068",
+      "quote": "The best way to spread Christmas cheer is singing loud for all to hear.",
+      "answers": ["elf"],
+      "display": "Elf",
+      "year": 2003,
+      "hint1": "2003",
+      "hint2": "Will Ferrell",
+      "tier": 1
+    },
+    {
+      "id": "q069",
+      "quote": "You’ll shoot your eye out!",
+      "answers": ["a christmas story", "christmas story"],
+      "display": "A Christmas Story",
+      "year": 1983,
+      "hint1": "1983",
+      "hint2": "BB gun warning",
+      "tier": 1
+    },
+    {
+      "id": "q070",
+      "quote": "Every time a bell rings, an angel gets his wings.",
+      "answers": ["its a wonderful life", "it's a wonderful life"],
+      "display": "It’s a Wonderful Life",
+      "year": 1946,
+      "hint1": "1946",
+      "hint2": "George Bailey",
+      "tier": 2
+    },
+    {
+      "id": "q071",
+      "quote": "Hallelujah! Holy sh—",
+      "answers": ["christmas vacation", "national lampoons christmas vacation", "national lampoons"],
+      "display": "Christmas Vacation",
+      "year": 1989,
+      "hint1": "1989",
+      "hint2": "Clark Griswold",
+      "tier": 2
+    },
+    {
+      "id": "q072",
+      "quote": "Maybe Christmas doesn’t come from a store.",
+      "answers": ["how the grinch stole christmas", "the grinch", "grinch"],
+      "display": "How the Grinch Stole Christmas",
+      "year": 2000,
+      "hint1": "2000",
+      "hint2": "Whoville",
+      "tier": 2
+    },
+    {
+      "id": "q073",
+      "quote": "Seeing isn’t believing. Believing is seeing.",
+      "answers": ["the santa clause", "santa clause", "santaclause"],
+      "display": "The Santa Clause",
+      "year": 1994,
+      "hint1": "1994",
+      "hint2": "Tim Allen",
+      "tier": 3
+    },
+    {
+      "id": "q074",
+      "quote": "What a lovely feeling.",
+      "answers": ["singin in the rain", "singing in the rain"],
+      "display": "Singin’ in the Rain",
+      "year": 1952,
+      "hint1": "1952",
+      "hint2": "Classic musical",
+      "tier": 3
     }
   ],
   "perfect_closers": [
