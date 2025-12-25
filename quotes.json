@@ -4,7 +4,7 @@
       "id": "q001",
       "quote": "I’ll be back.",
       "answers": ["the terminator", "terminator"],
-      "display": "The terminator",
+      "display": "The Terminator",
       "year": 1984,
       "hint1": "1984",
       "hint2": "Arnold Schwarzenegger",
@@ -363,7 +363,7 @@
     {
       "id": "q037",
       "quote": "It's a trap!",
-      "answers": ["return of the jedi", "star wars episode vi", "star wars episode vi return of the jedi", "star wars episode vi"],
+      "answers": ["return of the jedi", "star wars episode vi", "star wars episode vi return of the jedi", "star wars episode 6"],
       "display": "Return of the Jedi",
       "year": 1983,
       "hint1": "1983",
@@ -432,13 +432,13 @@
     },
     {
       "id": "q044",
-      "quote": "Roads? Where we're going, we don't need roads.",
-      "answers": ["back to the future"],
-      "display": "Back to the Future",
-      "year": 1985,
-      "hint1": "1985",
-      "hint2": "Delorean ending scene",
-      "tier": 1
+      "quote": "You don't know who I am.",
+      "answers": ["raging bull"],
+      "display": "Raging Bull",
+      "year": 1980,
+      "hint1": "1980",
+      "hint2": "Boxing biopic",
+      "tier": 3
     },
     {
       "id": "q045",
@@ -463,7 +463,7 @@
     {
       "id": "q047",
       "quote": "I am Iron Man.",
-      "answers": ["iron man", "avengers endgame", "the avengers", "avengers"],
+      "answers": ["iron man", "avengers endgame", "the avengers", "avengers","ironman"],
       "display": "Iron Man / Avengers: Endgame",
       "year": 2008,
       "hint1": "2008",
@@ -760,6 +760,300 @@
       "year": 1952,
       "hint1": "1952",
       "hint2": "Classic musical",
+      "tier": 3
+    },
+    {
+      "id": "q075",
+      "quote": "You are a toy!",
+      "answers": ["toy story"],
+      "display": "Toy Story",
+      "year": 1995,
+      "hint1": "1995",
+      "hint2": "Buzz vs Woody",
+      "tier": 1
+    },
+    {
+      "id": "q076",
+      "quote": "So long, partner.",
+      "answers": ["toy story 3", "toy story"],
+      "display": "Toy Story 3",
+      "year": 2010,
+      "hint1": "2010",
+      "hint2": "Emotional goodbye",
+      "tier": 2
+    },
+    {
+      "id": "q077",
+      "quote": "Just keep swimming.",
+      "answers": ["finding nemo"],
+      "display": "Finding Nemo",
+      "year": 2003,
+      "hint1": "2003",
+      "hint2": "Dory",
+      "tier": 1
+    },
+    {
+      "id": "q078",
+      "quote": "Fish are friends, not food.",
+      "answers": ["finding nemo"],
+      "display": "Finding Nemo",
+      "year": 2003,
+      "hint1": "2003",
+      "hint2": "Sharks support group",
+      "tier": 1
+    },
+    {
+      "id": "q079",
+      "quote": "Ogres are like onions.",
+      "answers": ["shrek"],
+      "display": "Shrek",
+      "year": 2001,
+      "hint1": "2001",
+      "hint2": "Layers",
+      "tier": 1
+    },
+    {
+      "id": "q080",
+      "quote": "What are you doing in my swamp?!",
+      "answers": ["shrek"],
+      "display": "Shrek",
+      "year": 2001,
+      "hint1": "2001",
+      "hint2": "Fairytale parody",
+      "tier": 1
+    },
+    {
+      "id": "q081",
+      "quote": "Fear me, if you dare.",
+      "answers": ["puss in boots"],
+      "display": "Puss in Boots",
+      "year": 2011,
+      "hint1": "2011",
+      "hint2": "Antonio Banderas voice",
+      "tier": 2
+    },
+    {
+      "id": "q082",
+      "quote": "I am known by many names.",
+      "answers": ["puss in boots"],
+      "display": "Puss in Boots",
+      "year": 2011,
+      "hint1": "2011",
+      "hint2": "Swashbuckling cat",
+      "tier": 2
+    },
+    {
+      "id": "q083",
+      "quote": "It’s so fluffy I’m gonna die!",
+      "answers": ["despicable me"],
+      "display": "Despicable Me",
+      "year": 2010,
+      "hint1": "2010",
+      "hint2": "Agnes",
+      "tier": 1
+    },
+    {
+      "id": "q084",
+      "quote": "Banana!",
+      "answers": ["despicable me", "minions"],
+      "display": "Despicable Me",
+      "year": 2010,
+      "hint1": "2010",
+      "hint2": "Minions",
+      "tier": 1
+    },
+    {
+      "id": "q085",
+      "quote": "Hakuna Matata.",
+      "answers": ["the lion king", "lion king"],
+      "display": "The Lion King",
+      "year": 1994,
+      "hint1": "1994",
+      "hint2": "No worries",
+      "tier": 1
+    },
+    {
+      "id": "q086",
+      "quote": "Remember who you are.",
+      "answers": ["the lion king", "lion king"],
+      "display": "The Lion King",
+      "year": 1994,
+      "hint1": "1994",
+      "hint2": "Mufasa",
+      "tier": 2
+    },
+    {
+      "id": "q087",
+      "quote": "Let it go!",
+      "answers": ["frozen"],
+      "display": "Frozen",
+      "year": 2013,
+      "hint1": "2013",
+      "hint2": "Elsa",
+      "tier": 1
+    },
+    {
+      "id": "q088",
+      "quote": "Just when I thought I was out, they pull me back in!",
+      "answers": [
+        "the godfather part iii",
+        "godfather part iii",
+        "godfather 3", "godfather"
+      ],
+      "display": "The Godfather Part III",
+      "year": 1990,
+      "hint1": "1990",
+      "hint2": "Michael Corleone",
+      "tier": 2
+    },
+    {
+      "id": "q089",
+      "quote": "I coulda been a contender.",
+      "answers": ["on the waterfront"],
+      "display": "On the Waterfront",
+      "year": 1954,
+      "hint1": "1954",
+      "hint2": "Boxing docks drama",
+      "tier": 2
+    },
+    {
+      "id": "q090",
+      "quote": "The horror… the horror.",
+      "answers": ["apocalypse now"],
+      "display": "Apocalypse Now",
+      "year": 1979,
+      "hint1": "1979",
+      "hint2": "Colonel Kurtz",
+      "tier": 2
+    },
+    {
+      "id": "q091",
+      "quote": "What are you rebelling against?",
+      "answers": ["the wild one"],
+      "display": "The Wild One",
+      "year": 1953,
+      "hint1": "1953",
+      "hint2": "Motorcycle gang",
+      "tier": 3
+    },
+    {
+      "id": "q092",
+      "quote": "When love is strong, it has nothing to do with morality.",
+      "answers": ["last tango in paris"],
+      "display": "Last Tango in Paris",
+      "year": 1972,
+      "hint1": "1972",
+      "hint2": "Controversial romance",
+      "tier": 3
+    },
+    {
+      "id": "q093",
+      "quote": "Friends, Romans, countrymen, lend me your ears.",
+      "answers": ["julius caesar"],
+      "display": "Julius Caesar",
+      "year": 1953,
+      "hint1": "1953",
+      "hint2": "Shakespeare adaptation",
+      "tier": 3
+    },
+    {
+      "id": "q094",
+      "quote": "Say goodnight to the bad guy!",
+      "answers": ["scarface"],
+      "display": "Scarface",
+      "year": 1983,
+      "hint1": "1983",
+      "hint2": "Tony Montana",
+      "tier": 1
+    },
+    {
+      "id": "q095",
+      "quote": "She's got a great ass!",
+      "answers": ["heat"],
+      "display": "Heat",
+      "year": 1995,
+      "hint1": "1995",
+      "hint2": "Bank robbery classic",
+      "tier": 2
+    },
+    {
+      "id": "q096",
+      "quote": "I'm just gettin' warmed up!",
+      "answers": ["scent of a woman"],
+      "display": "Scent of a Woman",
+      "year": 1992,
+      "hint1": "1992",
+      "hint2": "Blind colonel",
+      "tier": 2
+    },
+    {
+      "id": "q097",
+      "quote": "Attica! Attica!",
+      "answers": ["dog day afternoon"],
+      "display": "Dog Day Afternoon",
+      "year": 1975,
+      "hint1": "1975",
+      "hint2": "True crime hostage drama",
+      "tier": 3
+    },
+    {
+      "id": "q098",
+      "quote": "Vanity is definitely my favorite sin.",
+      "answers": ["the devil's advocate", "devils advocate"],
+      "display": "The Devil’s Advocate",
+      "year": 1997,
+      "hint1": "1997",
+      "hint2": "Pacino as the Devil",
+      "tier": 2
+    },
+    {
+      "id": "q099",
+      "quote": "I'm in the dark here, because there's no light.",
+      "answers": ["scent of a woman"],
+      "display": "Scent of a Woman",
+      "year": 1992,
+      "hint1": "1992",
+      "hint2": "Blind colonel",
+      "tier": 3
+    },
+    {
+      "id": "q100",
+      "quote": "If I were the man I was five years ago, I'd take a flamethrower to this place!",
+      "answers": ["scent of a woman"],
+      "display": "Scent of a Woman",
+      "year": 1992,
+      "hint1": "1992",
+      "hint2": "School hearing scene",
+      "tier": 2
+    },
+    {
+      "id": "q101",
+      "quote": "Hoo-ah!",
+      "answers": ["scent of a woman"],
+      "display": "Scent of a Woman",
+      "year": 1992,
+      "hint1": "1992",
+      "hint2": "Pacino catchphrase",
+      "tier": 1
+    },
+    {
+      "id": "q102",
+      "quote": "Funny how?",
+      "answers": ["goodfellas"],
+      "display": "Goodfellas",
+      "year": 1990,
+      "hint1": "1990",
+      "hint2": "Mob dinner scene",
+      "tier": 2
+    },
+    {
+      "id": "q103",
+      "quote": "Don't let yourself get attached to anything you are not willing to walk out on in 30 seconds flat.",
+      "answers": ["heat"],
+      "display": "Heat",
+      "year": 1995,
+      "hint1": "1995",
+      "hint2": "Professional thief code",
       "tier": 3
     }
   ],

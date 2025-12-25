@@ -299,6 +299,13 @@ button#submitBtn:disabled:hover {
   margin-bottom: 10px;
 }
 
+.returnHint {
+  margin-top: 10px;
+  font-size: 13px;
+  opacity: 0.85;
+  line-height: 1.35;
+}
+
 button#shareBtn,
 button#copyBtn {
   background: transparent;

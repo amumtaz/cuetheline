@@ -45,9 +45,12 @@ const PLAY_URL = "https://cuetheline.com/";
 
 // ------- Helpers -------
 function track(event, data = {}) {
-  // Placeholder for privacy-first analytics
-  // Example later: plausible('event', { props: data })
-  console.log("[track]", event, data);
+  if (window.goatcounter && typeof window.goatcounter.count === "function") {
+    window.goatcounter.count({
+      path: `event/${event}`,
+      title: JSON.stringify(data)
+    });
+  }
 }
 
 function todayKeyLocal() {
@@ -352,6 +355,9 @@ async function init() {
     resultMsg.innerHTML = `
       <div><b>Here’s how you did today:</b></div>
       <div style="margin-top:6px">Score: ${tState.correctCount} / 5</div>
+      <div class="returnHint">
+        Tomorrow, today’s answers unlock above — and you’ll get a new set of 5 quotes.
+      </div>
     `;
 
     shareCardEl.textContent = buildShareCard(tState);
@@ -504,6 +510,9 @@ function finishRun(tState) {
   resultMsg.innerHTML = `
     <div><b>Here’s how you did today:</b></div>
     <div style="margin-top:6px">Score: ${tState.correctCount} / 5</div>
+    <div class="returnHint">
+      Tomorrow, today’s answers unlock above — and you’ll get a new set of 5 quotes.
+    </div>
   `;
 
   shareCardEl.textContent = buildShareCard(tState);
