@@ -543,7 +543,7 @@
     {
       "id": "q055",
       "quote": "Dormammu, I've come to bargain.",
-      "answers": ["doctor strange"],
+      "answers": ["doctor strange", "dr strange", "dr. strange"],
       "display": "Doctor Strange",
       "year": 2016,
       "hint1": "2016",
@@ -908,7 +908,7 @@
     },
     {
       "id": "q089",
-      "quote": "I coulda been a contender.",
+      "quote": "I coulda been a contender. I coulda been somebody, instead of a bum, which is what I am.",
       "answers": ["on the waterfront"],
       "display": "On the Waterfront",
       "year": 1954,
@@ -1055,6 +1055,260 @@
       "hint1": "1995",
       "hint2": "Professional thief code",
       "tier": 3
+    },
+    {
+      "id": "q104",
+      "quote": "Frankly, my dear, I don't give a damn.",
+      "answers": ["gone with the wind"],
+      "display": "Gone with the Wind",
+      "year": 1939,
+      "hint1": "1939",
+      "hint2": "Civil War epic",
+      "tier": 1
+    },
+    {
+      "id": "q105",
+      "quote": "Toto, I've a feeling we're not in Kansas anymore.",
+      "answers": ["the wizard of oz", "wizard of oz"],
+      "display": "The Wizard of Oz",
+      "year": 1939,
+      "hint1": "1939",
+      "hint2": "Yellow brick road",
+      "tier": 1
+    },
+    {
+      "id": "q106",
+      "quote": "I am big. It's the pictures that got small.",
+      "answers": ["sunset boulevard"],
+      "display": "Sunset Boulevard",
+      "year": 1950,
+      "hint1": "1950",
+      "hint2": "Hollywood noir classic",
+      "tier": 2
+    },
+    {
+      "id": "q107",
+      "quote": "I'm as mad as hell, and I'm not going to take this anymore!",
+      "answers": ["network"],
+      "display": "Network",
+      "year": 1976,
+      "hint1": "1976",
+      "hint2": "Television satire",
+      "tier": 2
+    },
+    {
+      "id": "q108",
+      "quote": "Forget it, Jake. It's Chinatown.",
+      "answers": ["chinatown"],
+      "display": "Chinatown",
+      "year": 1974,
+      "hint1": "1974",
+      "hint2": "Neo-noir mystery",
+      "tier": 3
+    },
+    {
+      "id": "q109",
+      "quote": "It belongs in a museum!",
+      "answers": ["raiders of the lost ark", "indiana jones"],
+      "display": "Raiders of the Lost Ark",
+      "year": 1981,
+      "hint1": "1981",
+      "hint2": "Harrison Ford archaeologist",
+      "tier": 1
+    },
+    {
+      "id": "q110",
+      "quote": "Snakes. Why'd it have to be snakes?",
+      "answers": ["raiders of the lost ark", "indiana jones"],
+      "display": "Raiders of the Lost Ark",
+      "year": 1981,
+      "hint1": "1981",
+      "hint2": "Fear of reptiles",
+      "tier": 1
+    },
+    {
+      "id": "q111",
+      "quote": "It's not the years, honey. It's the mileage.",
+      "answers": ["raiders of the lost ark", "indiana jones"],
+      "display": "Raiders of the Lost Ark",
+      "year": 1981,
+      "hint1": "1981",
+      "hint2": "Adventuring archaeologist",
+      "tier": 2
+    },
+    {
+      "id": "q113",
+      "quote": "It ain't about how hard you hit. It's about how hard you can get hit and keep moving forward.",
+      "answers": ["rocky"],
+      "display": "Rocky",
+      "year": 1976,
+      "hint1": "1976",
+      "hint2": "Underdog boxing story",
+      "tier": 2
+    },
+    {
+      "id": "q113",
+      "quote": "Life, uh, finds a way.",
+      "answers": ["jurassic park"],
+      "display": "Jurassic Park",
+      "year": 1993,
+      "hint1": "1993",
+      "hint2": "Dinosaurs brought back to life",
+      "tier": 1
+    },
+    {
+      "id": "q114",
+      "quote": "It's just a flesh wound.",
+      "answers": [
+        "monty python and the holy grail",
+        "holy grail",
+        "monty python"
+      ],
+      "display": "Monty Python and the Holy Grail",
+      "year": 1975,
+      "hint1": "1975",
+      "hint2": "Black Knight scene",
+      "tier": 2
+    },
+    {
+      "id": "q115",
+      "quote": "You had me at hello.",
+      "answers": [
+        "jerry maguire"
+      ],
+      "display": "Jerry Maguire",
+      "year": 1996,
+      "hint1": "1996",
+      "hint2": "Tom Cruise monologue",
+      "tier": 1
+    },
+    {
+      "id": "q116",
+      "quote": "Always look on the bright side of life.",
+      "answers": [
+        "life of brian",
+        "monty python life of brian",
+        "monty python"
+      ],
+      "display": "Life of Brian",
+      "year": 1979,
+      "hint1": "1979",
+      "hint2": "Whistling crucifix scene",
+      "tier": 2
+    },
+    {
+      "id": "q117",
+      "quote": "Badges? We don't need no stinkin' badges!",
+      "answers": [
+        "blazing saddles"
+      ],
+      "display": "Blazing Saddles",
+      "year": 1974,
+      "hint1": "1974",
+      "hint2": "Western parody",
+      "tier": 1
+    },
+    {
+      "id": "q118",
+      "quote": "May the Schwartz be with you.",
+      "answers": [
+        "spaceballs"
+      ],
+      "display": "Spaceballs",
+      "year": 1987,
+      "hint1": "1987",
+      "hint2": "Star Wars parody",
+      "tier": 1
+    },
+    {
+      "id": "q119",
+      "quote": "It's good to be the king.",
+      "answers": [
+        "history of the world part i",
+        "history of the world"
+      ],
+      "display": "History of the World, Part I",
+      "year": 1981,
+      "hint1": "1981",
+      "hint2": "French monarchy satire",
+      "tier": 2
+    },
+    {
+      "id": "q120",
+      "quote": "It's pronounced Fronkensteen.",
+      "answers": [
+        "young frankenstein"
+      ],
+      "display": "Young Frankenstein",
+      "year": 1974,
+      "hint1": "1974",
+      "hint2": "Gene Wilder",
+      "tier": 2
+    },
+    {
+      "id": "q121",
+      "quote": "Dobby is free!",
+      "answers": [
+        "harry potter and the chamber of secrets",
+        "harry potter"
+      ],
+      "display": "Harry Potter and the Chamber of Secrets",
+      "year": 2002,
+      "hint1": "2002",
+      "hint2": "House-elf",
+      "tier": 1
+    },
+    {
+      "id": "q122",
+      "quote": "I solemnly swear that I am up to no good.",
+      "answers": [
+        "harry potter and the prisoner of azkaban",
+        "harry potter"
+      ],
+      "display": "Harry Potter and the Prisoner of Azkaban",
+      "year": 2004,
+      "hint1": "2004",
+      "hint2": "Marauder’s Map",
+      "tier": 2
+    },
+    {
+      "id": "q123",
+      "quote": "I’m sorry, Professor. But I must not tell lies.",
+      "answers": [
+        "harry potter and the order of the phoenix",
+        "harry potter"
+      ],
+      "display": "Harry Potter and the Order of the Phoenix",
+      "year": 2007,
+      "hint1": "2007",
+      "hint2": "Umbridge",
+      "tier": 2
+    },
+    {
+      "id": "q124",
+      "quote": "Once again, you show all the sensitivity of a blunt axe.",
+      "answers": [
+        "harry potter and the half-blood prince",
+        "harry potter"
+      ],
+      "display": "Harry Potter and the Half-Blood Prince",
+      "year": 2009,
+      "hint1": "2009",
+      "hint2": "Snape",
+      "tier": 3
+    },
+    {
+      "id": "q125",
+      "quote": "Expecto Patronum!",
+      "answers": [
+        "harry potter and the prisoner of azkaban",
+        "harry potter"
+      ],
+      "display": "Harry Potter and the Prisoner of Azkaban",
+      "year": 2004,
+      "hint1": "2004",
+      "hint2": "Defensive charm",
+      "tier": 1
     }
   ],
   "perfect_closers": [
