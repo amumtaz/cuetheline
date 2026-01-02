@@ -1309,6 +1309,226 @@
       "hint1": "2004",
       "hint2": "Defensive charm",
       "tier": 1
+    },
+    {
+      "id": "q126",
+      "quote": "May the odds be ever in your favor.",
+      "answers": ["the hunger games", "hunger games"],
+      "display": "The Hunger Games",
+      "year": 2012,
+      "hint1": "2012",
+      "hint2": "Dystopian survival games",
+      "tier": 1
+    },
+    {
+      "id": "q127",
+      "quote": "I volunteer as tribute!",
+      "answers": ["the hunger games", "hunger games"],
+      "display": "The Hunger Games",
+      "year": 2012,
+      "hint1": "2012",
+      "hint2": "Katniss Everdeen",
+      "tier": 1
+    },
+    {
+      "id": "q128",
+      "quote": "On Wednesdays, we wear pink.",
+      "answers": ["mean girls"],
+      "display": "Mean Girls",
+      "year": 2004,
+      "hint1": "2004",
+      "hint2": "High school clique satire",
+      "tier": 1
+    },
+    {
+      "id": "q129",
+      "quote": "Stop trying to make fetch happen.",
+      "answers": ["mean girls"],
+      "display": "Mean Girls",
+      "year": 2004,
+      "hint1": "2004",
+      "hint2": "Iconic teen comedy",
+      "tier": 1
+    },
+    {
+      "id": "q130",
+      "quote": "Anyone can wear the mask.",
+      "answers": ["spider-man into the spider-verse","spiderman", "spider man"],
+      "display": "Spider-Man: Into the Spider-Verse",
+      "year": 2018,
+      "hint1": "2018",
+      "hint2": "Animated multiverse",
+      "tier": 1
+    },
+    {
+      "id": "q131",
+      "quote": "It's a leap of faith.",
+      "answers": ["spider-man into the spider-verse", "spider man", "spiderman"],
+      "display": "Spider-Man: Into the Spider-Verse",
+      "year": 2018,
+      "hint1": "2018",
+      "hint2": "Miles Morales",
+      "tier": 2
+    },
+    {
+      "id": "q132",
+      "quote": "Fear is the mind-killer.",
+      "answers": ["dune"],
+      "display": "Dune",
+      "year": 2021,
+      "hint1": "2021",
+      "hint2": "Desert planet Arrakis",
+      "tier": 1
+    },
+    {
+      "id": "q133",
+      "quote": "I see you.",
+      "answers": ["avatar"],
+      "display": "Avatar",
+      "year": 2009,
+      "hint1": "2009",
+      "hint2": "Pandora",
+      "tier": 1
+    },
+    {
+      "id": "q134",
+      "quote": "You either die a hero or live long enough to see yourself become the villain.",
+      "answers": ["the dark knight", "batman", "dark knight"],
+      "display": "The Dark Knight",
+      "year": 2008,
+      "hint1": "2008",
+      "hint2": "Harvey Dent",
+      "tier": 2
+    },
+    {
+      "id": "q135",
+      "quote": "This is the way.",
+      "answers": ["the mandalorian", "mandalorian"],
+      "display": "The Mandalorian",
+      "year": 2019,
+      "hint1": "2019",
+      "hint2": "Star Wars TV era",
+      "tier": 1
+    }
+    {
+      "id": "q136",
+      "quote": "A woman’s heart is a deep ocean of secrets.",
+      "answers": ["titanic"],
+      "display": "Titanic",
+      "year": 1997,
+      "hint1": "1997",
+      "hint2": "Opening narration",
+      "tier": 2
+    },
+    {
+      "id": "q137",
+      "quote": "Get away from her, you bitch!",
+      "answers": ["aliens"],
+      "display": "Aliens",
+      "year": 1986,
+      "hint1": "1986",
+      "hint2": "Sigourney Weaver",
+      "tier": 1
+    },
+    {
+      "id": "q138",
+      "quote": "Game over, man! Game over!",
+      "answers": ["aliens"],
+      "display": "Aliens",
+      "year": 1986,
+      "hint1": "1986",
+      "hint2": "Space marines panic scene",
+      "tier": 1
+    },
+    {
+      "id": "q139",
+      "quote": "Come with me if you want to live.",
+      "answers": ["the terminator", "terminator 2"],
+      "display": "The Terminator / T2",
+      "year": 1984,
+      "hint1": "1984",
+      "hint2": "Time-traveling protector",
+      "tier": 1
+    },
+    {
+      "id": "q140",
+      "quote": "There is no fate but what we make for ourselves.",
+      "answers": ["terminator 2", "t2"],
+      "display": "Terminator 2: Judgment Day",
+      "year": 1991,
+      "hint1": "1991",
+      "hint2": "Judgment Day theme",
+      "tier": 2
+    },
+    {
+      "id": "q141",
+      "quote": "The unknown future rolls toward us. I face it for the first time with a sense of hope.",
+      "answers": ["terminator 2", "t2"],
+      "display": "Terminator 2: Judgment Day",
+      "year": 1991,
+      "hint1": "1991",
+      "hint2": "Final monologue",
+      "tier": 3
+    },
+    {
+      "id": "q142",
+      "quote": "This is great. This is just great.",
+      "answers": ["true lies"],
+      "display": "True Lies",
+      "year": 1994,
+      "hint1": "1994",
+      "hint2": "Spy action comedy",
+      "tier": 2
+    },
+    {
+      "id": "q143",
+      "quote": "You're fired.",
+      "answers": ["true lies"],
+      "display": "True Lies",
+      "year": 1994,
+      "hint1": "1994",
+      "hint2": "Arnold one-liner",
+      "tier": 1
+    },
+    {
+      "id": "q144",
+      "quote": "I see you.",
+      "answers": ["avatar"],
+      "display": "Avatar",
+      "year": 2009,
+      "hint1": "2009",
+      "hint2": "Na’vi greeting",
+      "tier": 1
+    },
+    {
+      "id": "q145",
+      "quote": "The strength of the pack is the wolf, and the strength of the wolf is the pack.",
+      "answers": ["avatar"],
+      "display": "Avatar",
+      "year": 2009,
+      "hint1": "2009",
+      "hint2": "Pandora philosophy",
+      "tier": 2
+    },
+    {
+      "id": "q146",
+      "quote": "I was supposed to die. Everything is backwards now.",
+      "answers": ["avatar the way of water", "avatar 2"],
+      "display": "Avatar: The Way of Water",
+      "year": 2022,
+      "hint1": "2022",
+      "hint2": "Sequel on Pandora",
+      "tier": 2
+    },
+    {
+      "id": "q147",
+      "quote": "Family keeps our hearts alive.",
+      "answers": ["avatar the way of water", "avatar 2"],
+      "display": "Avatar: The Way of Water",
+      "year": 2022,
+      "hint1": "2022",
+      "hint2": "Underwater clans",
+      "tier": 1
     }
   ],
   "perfect_closers": [

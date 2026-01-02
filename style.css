@@ -308,14 +308,19 @@ button#submitBtn:disabled:hover {
 
 button#shareBtn,
 button#copyBtn {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,.4);
-  color: var(--ink-light);
+  background: var(--card-lime);
+  color: var(--ink-dark);
+  border: none;
   padding: 8px 14px;
   border-radius: var(--radius-pill);
   cursor: pointer;
   font-size: 13px;
-  padding: 8px 14px;
+  font-weight: 600;
+}
+
+button#shareBtn:hover,
+button#copyBtn:hover {
+  background: #bdf000; /* slightly darker lime */
 }
 
 .shareCard {

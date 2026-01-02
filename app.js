@@ -42,6 +42,8 @@ const howDialog = document.getElementById("howDialog");
 const closeHowBtn = document.getElementById("closeHowBtn");
 
 const PLAY_URL = "https://cuetheline.com/";
+const SHARE_URL =
+  "https://cuetheline.com/?utm_source=in_app&utm_medium=share&utm_campaign=post_game_share";
 
 // ------- Helpers -------
 function track(event, data = {}) {
