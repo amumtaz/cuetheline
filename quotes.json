@@ -1137,7 +1137,7 @@
       "tier": 2
     },
     {
-      "id": "q113",
+      "id": "q112",
       "quote": "It ain't about how hard you hit. It's about how hard you can get hit and keep moving forward.",
       "answers": ["rocky"],
       "display": "Rocky",
@@ -1409,7 +1409,7 @@
       "hint1": "2019",
       "hint2": "Star Wars TV era",
       "tier": 1
-    }
+    },
     {
       "id": "q136",
       "quote": "A woman’s heart is a deep ocean of secrets.",
@@ -1492,16 +1492,6 @@
     },
     {
       "id": "q144",
-      "quote": "I see you.",
-      "answers": ["avatar"],
-      "display": "Avatar",
-      "year": 2009,
-      "hint1": "2009",
-      "hint2": "Na’vi greeting",
-      "tier": 1
-    },
-    {
-      "id": "q145",
       "quote": "The strength of the pack is the wolf, and the strength of the wolf is the pack.",
       "answers": ["avatar"],
       "display": "Avatar",
@@ -1511,7 +1501,7 @@
       "tier": 2
     },
     {
-      "id": "q146",
+      "id": "q145",
       "quote": "I was supposed to die. Everything is backwards now.",
       "answers": ["avatar the way of water", "avatar 2"],
       "display": "Avatar: The Way of Water",
@@ -1521,7 +1511,7 @@
       "tier": 2
     },
     {
-      "id": "q147",
+      "id": "q146",
       "quote": "Family keeps our hearts alive.",
       "answers": ["avatar the way of water", "avatar 2"],
       "display": "Avatar: The Way of Water",
