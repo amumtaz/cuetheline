@@ -138,7 +138,7 @@
       "year": 1992,
       "hint1": "1992",
       "hint2": "Courtroom drama",
-      "tier": 2
+      "tier": 3
     },
     {
       "id": "q015",
@@ -1249,7 +1249,7 @@
       "id": "q121",
       "quote": "Dobby is free!",
       "answers": [
-        "harry potter and the chamber of secrets",
+        "harry potter and the chamber of secrets", "chamer of commerce",
         "harry potter"
       ],
       "display": "Harry Potter and the Chamber of Secrets",
@@ -1262,7 +1262,7 @@
       "id": "q122",
       "quote": "I solemnly swear that I am up to no good.",
       "answers": [
-        "harry potter and the prisoner of azkaban",
+        "harry potter and the prisoner of azkaban", "prisoner of azkaban",
         "harry potter"
       ],
       "display": "Harry Potter and the Prisoner of Azkaban",
@@ -1275,7 +1275,7 @@
       "id": "q123",
       "quote": "I’m sorry, Professor. But I must not tell lies.",
       "answers": [
-        "harry potter and the order of the phoenix",
+        "harry potter and the order of the phoenix", "order of the phoenix",
         "harry potter"
       ],
       "display": "Harry Potter and the Order of the Phoenix",
@@ -1288,7 +1288,7 @@
       "id": "q124",
       "quote": "Once again, you show all the sensitivity of a blunt axe.",
       "answers": [
-        "harry potter and the half-blood prince",
+        "harry potter and the half-blood prince", "half-blood prince",
         "harry potter"
       ],
       "display": "Harry Potter and the Half-Blood Prince",
@@ -1301,7 +1301,7 @@
       "id": "q125",
       "quote": "Expecto Patronum!",
       "answers": [
-        "harry potter and the prisoner of azkaban",
+        "harry potter and the prisoner of azkaban", "prisoner of azkaban",
         "harry potter"
       ],
       "display": "Harry Potter and the Prisoner of Azkaban",
@@ -1353,7 +1353,7 @@
     {
       "id": "q130",
       "quote": "Anyone can wear the mask.",
-      "answers": ["spider-man into the spider-verse","spiderman", "spider man"],
+      "answers": ["spider-man into the spider-verse","spiderman", "spider man","spiderman into the spiderverse","into the spiderverse"],
       "display": "Spider-Man: Into the Spider-Verse",
       "year": 2018,
       "hint1": "2018",
@@ -1363,7 +1363,7 @@
     {
       "id": "q131",
       "quote": "It's a leap of faith.",
-      "answers": ["spider-man into the spider-verse", "spider man", "spiderman"],
+      "answers": ["spider-man into the spider-verse", "spider man", "spiderman","spiderman into the spiderverse","into the spiderverse"],
       "display": "Spider-Man: Into the Spider-Verse",
       "year": 2018,
       "hint1": "2018",
@@ -1422,7 +1422,7 @@
     },
     {
       "id": "q137",
-      "quote": "Get away from her, you bitch!",
+      "quote": "Get away from her, you bi**h!",
       "answers": ["aliens"],
       "display": "Aliens",
       "year": 1986,
@@ -1443,8 +1443,8 @@
     {
       "id": "q139",
       "quote": "Come with me if you want to live.",
-      "answers": ["the terminator", "terminator 2"],
-      "display": "The Terminator / T2",
+      "answers": ["the terminator", "terminator 2", "t2","terminator"],
+      "display": "The Terminator / Terminator 2: Judgment Day",
       "year": 1984,
       "hint1": "1984",
       "hint2": "Time-traveling protector",
@@ -1503,7 +1503,7 @@
     {
       "id": "q145",
       "quote": "I was supposed to die. Everything is backwards now.",
-      "answers": ["avatar the way of water", "avatar 2"],
+      "answers": ["avatar the way of water", "avatar 2", "avatar"],
       "display": "Avatar: The Way of Water",
       "year": 2022,
       "hint1": "2022",
@@ -1513,13 +1513,223 @@
     {
       "id": "q146",
       "quote": "Family keeps our hearts alive.",
-      "answers": ["avatar the way of water", "avatar 2"],
+      "answers": ["avatar the way of water", "avatar 2", "avatar"],
       "display": "Avatar: The Way of Water",
       "year": 2022,
       "hint1": "2022",
       "hint2": "Underwater clans",
       "tier": 1
-    }
+    },
+    {
+      "id": "q147",
+      "quote": "You want the truth? You can’t handle the truth!",
+      "answers": ["a few good men"],
+      "display": "A few good men",
+      "year": 1992,
+      "hint1": "1992",
+      "hint2": "Courtroom meltdown",
+      "tier": 1
+    },
+    {
+      "id": "q148",
+      "quote": "I’m not bad. I’m just drawn that way.",
+      "answers": ["who framed roger rabbit"],
+      "display": "Who Framed Roger Rabbit",
+      "year": 1988,
+      "hint1": "1988",
+      "hint2": "Neo-noir Los Angeles",
+      "tier": 3
+    },
+    {
+      "id": "q149",
+      "quote": "All work and no play makes Jack a dull boy.",
+      "answers": ["the shining","shining"],
+      "display": "The Shining",
+      "year": 1980,
+      "hint1": "1980",
+      "hint2": "Typewriter pages",
+      "tier": 2
+    },
+    {
+      "id": "q150",
+      "quote": "I’m the Joker, baby!",
+      "answers": ["batman","batman 1989"],
+      "display": "Batman",
+      "year": 1989,
+      "hint1": "1989",
+      "hint2": "Gotham villain laugh",
+      "tier": 1
+    },
+    {
+      "id": "q151",
+      "quote": "This is as good as it gets.",
+      "answers": ["as good as it gets"],
+      "display": "As Good As It Gets",
+      "year": 1997,
+      "hint1": "1997",
+      "hint2": "OCD novelist",
+      "tier": 1
+    },
+    {
+      "id": "q152",
+      "quote": "Sell crazy someplace else. We’re all stocked up here.",
+      "answers": ["as good as it gets"],
+      "display": "As Good As It Gets",
+      "year": 1997,
+      "hint1": "1997",
+      "hint2": "Coffee shop scene",
+      "tier": 1
+    },
+    {
+      "id": "q153",
+      "quote": "Sanka, you dead? ya mon.",
+      "answers": ["cool runnings"],
+      "display": "Cool Runnings",
+      "year": 1993,
+      "hint1": "1993",
+      "hint2": "Jamaican bobsled team",
+      "tier": 1
+    },
+    {
+      "id": "q154",
+      "quote": "If you’re not enough without it, you’ll never be enough with it.",
+      "answers": ["cool runnings"],
+      "display": "Cool Runnings",
+      "year": 1993,
+      "hint1": "1993",
+      "hint2": "Olympic underdogs",
+      "tier": 2
+    },
+  {
+    "id": "q155",
+    "quote": "Who you gonna call?",
+    "answers": ["ghostbusters"],
+    "display": "Ghostbusters",
+    "year": 1984,
+    "hint1": "1984",
+    "hint2": "Paranormal comedy",
+    "tier": 1
+  },
+  {
+    "id": "q156",
+    "quote": "We came, we saw, we kicked its ass!",
+    "answers": ["ghostbusters"],
+    "display": "Ghostbusters",
+    "year": 1984,
+    "hint1": "1984",
+    "hint2": "Bill Murray one-liner",
+    "tier": 2
+  },
+  {
+    "id": "q157",
+    "quote": "Don’t cross the streams.",
+    "answers": ["ghostbusters"],
+    "display": "Ghostbusters",
+    "year": 1984,
+    "hint1": "1984",
+    "hint2": "Proton packs rule",
+    "tier": 2
+  },
+  {
+    "id": "q158",
+    "quote": "All righty then!",
+    "answers": ["ace ventura", "ace ventura pet detective"],
+    "display": "Ace Ventura: Pet Detective",
+    "year": 1994,
+    "hint1": "1994",
+    "hint2": "Pet detective",
+    "tier": 1
+  },
+  {
+    "id": "q159",
+    "quote": "Ssssssmokin’!",
+    "answers": ["the mask","mask"],
+    "display": "The Mask",
+    "year": 1994,
+    "hint1": "1994",
+    "hint2": "Green-faced chaos",
+    "tier": 1
+  },
+  {
+    "id": "q160",
+    "quote": "So you’re telling me there’s a chance!",
+    "answers": ["dumb and dumber"],
+    "display": "Dumb and Dumber",
+    "year": 1994,
+    "hint1": "1994",
+    "hint2": "Road trip idiots",
+    "tier": 1
+  },
+  {
+    "id": "q161",
+    "quote": "Somebody stop me!",
+    "answers": ["the mask","mask"],
+    "display": "The Mask",
+    "year": 1994,
+    "hint1": "1994",
+    "hint2": "Zoot suit chaos",
+    "tier": 2
+  },
+  {
+    "id": "q162",
+    "quote": "The pen is blue!",
+    "answers": ["liar liar"],
+    "display": "Liar Liar",
+    "year": 1997,
+    "hint1": "1997",
+    "hint2": "Cannot lie",
+    "tier": 3
+  },
+  {
+    "id": "q163",
+    "quote": "Good morning, and in case I don't see ya, good afternoon, good evening, and good night!",
+    "answers": ["the truman show","truman show"],
+    "display": "The Truman Show",
+    "year": 1998,
+    "hint1": "1998",
+    "hint2": "Life is a TV show",
+    "tier": 3
+  },
+  {
+    "id": "q164",
+    "quote": "It’s not the plane. It’s the pilot.",
+    "answers": ["top gun"],
+    "display": "Top Gun",
+    "year": 1986,
+    "hint1": "1986",
+    "hint2": "Fighter pilots",
+    "tier": 2
+    },
+  {
+    "id": "q165",
+    "quote": "You want answers? I think I’m entitled…!",
+    "answers": ["a few good men"],
+    "display": "A few good men",
+    "year": 1992,
+    "hint1": "1992",
+    "hint2": "Courtroom drama",
+    "tier": 3
+  },
+  {
+    "id": "q166",
+    "quote": "Your mission, should you choose to accept it…",
+    "answers": ["mission impossible"],
+    "display": "Mission Impossible Franchise",
+    "year": 1996,
+    "hint1": "1996",
+    "hint2": "Spy Thriller Franchise",
+    "tier": 1
+  },  
+  {
+    "id": "q167",
+    "quote": "In the future, you will be accused of a crime…",
+    "answers": ["minority report"],
+    "display": "Minority Report",
+    "year": 2002,
+    "hint1": "2002",
+    "hint2": "Sci Fi, Tom Cruise",
+    "tier": 2
+  }
   ],
   "perfect_closers": [
     { "quote": "Well, nobody’s perfect.", "source": "Some Like It Hot" },
