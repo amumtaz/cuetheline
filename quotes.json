@@ -132,12 +132,12 @@
     },
     {
       "id": "q014",
-      "quote": "You can’t handle the truth!",
-      "answers": ["a few good men"],
-      "display": "A few good men",
-      "year": 1992,
-      "hint1": "1992",
-      "hint2": "Courtroom drama",
+      "quote": "I don't want to be a product of my environment.",
+      "answers": ["the departed"],
+      "display": "The Departed",
+      "year": 2006,
+      "hint1": "2006",
+      "hint2": "Boston crime thriller",
       "tier": 3
     },
     {
@@ -213,7 +213,7 @@
     {
       "id": "q022",
       "quote": "Life is like a box of chocolates.",
-      "answers": ["forrest gump"],
+      "answers": ["forrest gump","forest gump"],
       "display": "Forrest Gump",
       "year": 1994,
       "hint1": "1994",
@@ -453,7 +453,7 @@
     {
       "id": "q046",
       "quote": "Nobody calls me chicken.",
-      "answers": ["back to the future part ii", "back to the future part iii", "Back to the future"],
+      "answers": ["back to the future part ii", "back to the future part iii", "back to the future"],
       "display": "Back to the Future Part II",
       "year": 1989,
       "hint1": "1989",
@@ -1249,7 +1249,7 @@
       "id": "q121",
       "quote": "Dobby is free!",
       "answers": [
-        "harry potter and the chamber of secrets", "chamer of commerce",
+        "harry potter and the chamber of secrets", "chamber of secrets",
         "harry potter"
       ],
       "display": "Harry Potter and the Chamber of Secrets",
@@ -1600,7 +1600,7 @@
       "hint2": "Olympic underdogs",
       "tier": 2
     },
-  {
+    {
     "id": "q155",
     "quote": "Who you gonna call?",
     "answers": ["ghostbusters"],
@@ -1672,7 +1672,7 @@
   },
   {
     "id": "q162",
-    "quote": "The pen is blue!",
+    "quote": "The truth shall set you free!",
     "answers": ["liar liar"],
     "display": "Liar Liar",
     "year": 1997,
@@ -1702,13 +1702,13 @@
     },
   {
     "id": "q165",
-    "quote": "You want answers? I think I’m entitled…!",
-    "answers": ["a few good men"],
-    "display": "A few good men",
-    "year": 1992,
-    "hint1": "1992",
-    "hint2": "Courtroom drama",
-    "tier": 3
+    "quote": "You make me want to be a better man.",
+    "answers": ["as good as it gets"],
+    "display": "As Good As It Gets",
+    "year": 1997,
+    "hint1": "1997",
+    "hint2": "OCD novelist romance, jack nicholson",
+    "tier": 2
   },
   {
     "id": "q166",
@@ -1729,6 +1729,136 @@
     "hint1": "2002",
     "hint2": "Sci Fi, Tom Cruise",
     "tier": 2
+  },
+  {
+    "id": "q168",
+    "quote": "Go ahead, make my day.",
+    "answers": ["sudden impact"],
+    "display": "Sudden Impact",
+    "year": 1983,
+    "hint1": "1983",
+    "hint2": "Clint Eastwood",
+    "tier": 1
+  },
+  {
+    "id": "q169",
+    "quote": "Do you feel lucky, Punk!",
+    "answers": ["dirty harry"],
+    "display": "Dirty Harry",
+    "year": 1971,
+    "hint1": "1971",
+    "hint2": "San Francisco cop, Clint Eastwood",
+    "tier": 1
+  },  
+  {
+    "id": "q170",
+    "quote": "A man’s got to know his limitations.",
+    "answers": ["magnum force"],
+    "display": "Magnum Force",
+    "year": 1973,
+    "hint1": "1973",
+    "hint2": "Clint Eastwood",
+    "tier": 2
+  },  
+  {
+    "id": "q171",
+    "quote": "You see, in this world there’s two kinds of people…",
+    "answers": ["the good, the bad, and the ugly","good bad ugly", "the good the bad and the ugly"],
+    "display": "The Good, the Bad and the Ugly ",
+    "year": 1966,
+    "hint1": "1966",
+    "hint2": "Western, Clint Eastwood",
+    "tier": 3
+  },  
+  {
+    "id": "q172",
+    "quote": "Get off my lawn.",
+    "answers": ["gran torino"],
+    "display": "Gran Torino",
+    "year": 2008,
+    "hint1": "2008",
+    "hint2": "Gruff Korean War vet, Clint Eastwood",
+    "tier": 1
+  },  
+  {
+    "id": "q173",
+    "quote": "We all got it coming, kid.",
+    "answers": ["unforgiven"],
+    "display": "Unforgiven",
+    "year": 1992,
+    "hint1": "1992",
+    "hint2": "Western, Clint Eastwood",
+    "tier": 3
+  },   
+  {
+    "id": "q174",
+    "quote": "Carpe diem. Seize the day, boys.",
+    "answers": ["dead poets society", "dead poet society"],
+    "display": "Dead Poets Society",
+    "year": 1989,
+    "hint1": "1989",
+    "hint2": "Unconventional English teacher",
+    "tier": 1
+  },   
+  {
+    "id": "q175",
+    "quote": "O Captain! My Captain!",
+    "answers": ["dead poets society", "dead poet society"],
+    "display": "Dead Poets Society",
+    "year": 1989,
+    "hint1": "1989",
+    "hint2": "Standing on desks scene.",
+    "tier": 1
+  },   
+  {
+    "id": "q176",
+    "quote": "It's not your fault.",
+    "answers": ["good will hunting"],
+    "display": "Good Will Hunting",
+    "year": 1997,
+    "hint1": "1997",
+    "hint2": "Therapist breakthrough scene",
+    "tier": 1
+  },
+  {
+    "id": "q177",
+    "quote": "Good morning, Vietnam!",
+    "answers": ["good morning vietnam"],
+    "display": "Good Morning, Vietnam",
+    "year": 1987,
+    "hint1": "1987",
+    "hint2": "Radio DJ greeting",
+    "tier": 1
+  },
+  {
+    "id": "q178",
+    "quote": "You treat a disease, you win, you lose. You treat a person, I guarantee you win.",
+    "answers": ["patch adams"],
+    "display": "Patch Adams",
+    "year": 1998,
+    "hint1": "1998",
+    "hint2": "Doctor with a red nose",
+    "tier": 2
+  },
+  {
+    "id": "q179",
+    "quote": "When you have to shoot, shoot. Don't talk.",
+    "answers": ["the good, the bad and the ugly", "good bad ugly", "the good the bad and the ugly"],
+    "display": "The Good, the Bad and the Ugly",
+    "year": 1966,
+    "hint1": "1966",
+    "hint2": "Spaghetti western showdown",
+    "tier": 2
+  },
+  {
+    "id": "q180",
+    "quote": "Be the flame, not the moth.",
+    "answers": ["the witches of eastwick"],
+    "display": "The Witches of Eastwick",
+    "year": 1987,
+    "hint1": "1987",
+    "hint2": "Supernatural satire",
+    "tier": 3
   }
   ],
   "perfect_closers": [

@@ -1,7 +1,6 @@
 // app.js
 // Movie Quotes v0.2 (no backend)
 // - Daily shared set of 5 quotes, chosen via constrained rotation (simple version here)
-// - First wrong ends run
 // - Hints optional; tracked
 // - Yesterday answers revealed next day (local to device)
 // NOTE: This v0.2 uses deterministic daily selection with a cooldown-ish shuffle,
