@@ -1603,7 +1603,7 @@
     {
     "id": "q155",
     "quote": "Who you gonna call?",
-    "answers": ["ghostbusters"],
+    "answers": ["ghostbusters", "ghost busters"],
     "display": "Ghostbusters",
     "year": 1984,
     "hint1": "1984",
@@ -1613,7 +1613,7 @@
   {
     "id": "q156",
     "quote": "We came, we saw, we kicked its ass!",
-    "answers": ["ghostbusters"],
+    "answers": ["ghostbusters", "ghost busters"],
     "display": "Ghostbusters",
     "year": 1984,
     "hint1": "1984",
@@ -1623,7 +1623,7 @@
   {
     "id": "q157",
     "quote": "Don’t cross the streams.",
-    "answers": ["ghostbusters"],
+    "answers": ["ghostbusters", "ghost busters"],
     "display": "Ghostbusters",
     "year": 1984,
     "hint1": "1984",
@@ -1798,7 +1798,7 @@
     "year": 1989,
     "hint1": "1989",
     "hint2": "Unconventional English teacher",
-    "tier": 1
+    "tier": 2
   },   
   {
     "id": "q175",
@@ -1850,16 +1850,246 @@
     "hint2": "Spaghetti western showdown",
     "tier": 2
   },
-  {
-    "id": "q180",
-    "quote": "Be the flame, not the moth.",
-    "answers": ["the witches of eastwick"],
-    "display": "The Witches of Eastwick",
-    "year": 1987,
-    "hint1": "1987",
-    "hint2": "Supernatural satire",
-    "tier": 3
-  }
+{
+  "id": "q180",
+  "quote": "Be the flame, not the moth.",
+  "answers": ["the witches of eastwick"],
+  "display": "The Witches of Eastwick",
+  "year": 1987,
+  "hint1": "1987",
+  "hint2": "Supernatural satire",
+  "tier": 3
+},
+{
+  "id": "q181",
+  "quote": "Help me help you.",
+  "answers": ["jerry maguire"],
+  "display": "Jerry Maguire",
+  "year": 1996,
+  "hint1": "1996",
+  "hint2": "Sports agent plea",
+  "tier": 2
+},
+{
+  "id": "q182",
+  "quote": "Talk to me, Goose.",
+  "answers": ["top gun"],
+  "display": "Top Gun",
+  "year": 1986,
+  "hint1": "1986",
+  "hint2": "Pilot calls his RIO",
+  "tier": 2
+},
+{
+  "id": "q183",
+  "quote": "I want the truth!",
+  "answers": ["a few good men", "few good men"],
+  "display": "A Few Good Men",
+  "year": 1992,
+  "hint1": "1992",
+  "hint2": "Military courtroom drama",
+  "tier": 2
+},
+{
+  "id": "q184",
+  "quote": "There’s no crying in baseball!",
+  "answers": ["a league of their own", "league of their own"],
+  "display": "A League of Their Own",
+  "year": 1992,
+  "hint1": "1992",
+  "hint2": "Tom Hanks as baseball coach",
+  "tier": 2
+},
+{
+  "id": "q185",
+  "quote": "I'm not a smart man, but I know what love is.",
+  "answers": ["forrest gump", "forest gump"],
+  "display": "Forrest Gump",
+  "year": 1994,
+  "hint1": "1994",
+  "hint2": "Rain-soaked confession",
+  "tier": 3
+},
+{
+  "id": "q186",
+  "quote": "Earn this.",
+  "answers": ["saving private ryan"],
+  "display": "Saving Private Ryan",
+  "year": 1998,
+  "hint1": "1998",
+  "hint2": "Captain Miller’s last words",
+  "tier": 3
+},
+{
+  "id": "q187",
+  "quote": "I'm gonna need you to be real quiet.",
+  "answers": ["big"],
+  "display": "Big",
+  "year": 1988,
+  "hint1": "1980s",
+  "hint2": "A young boy and his toys",
+  "tier": 3
+},
+{
+  "id": "q188",
+  "quote": "There’s no way out of this one.",
+  "answers": ["cast away"],
+  "display": "Cast Away",
+  "year": 2000,
+  "hint1": "Lost at sea",
+  "hint2": "The desperation and isolation of survival",
+  "tier": 3
+},
+{
+  "id": "q189",
+  "quote": "There's nothing wrong with being different. It just makes life interesting.",
+  "answers": ["flash"],
+  "display": "Flash",
+  "year": 1990,
+  "hint1": "1990s",
+  "hint2": "A man who falls for a mermaid",
+  "tier": 3
+},
+{
+  "id": "q190",
+  "quote": "The things we love most... they don't always leave us with a neat and tidy goodbye, do they?",
+  "answers": ["sleepless in seattle"],
+  "display": "Sleepless in Seattle",
+  "year": 1993,
+  "hint1": "Romance",
+  "hint2": "A love story with a twist of fate",
+  "tier": 2
+},
+{
+  "id": "q191",
+  "quote": "Show me the money!",
+  "answers": ["jerry maguire"],
+  "display": "Jerry Maguire",
+  "year": 1996,
+  "hint1": "Romantic comedy-drama",
+  "hint2": "Love and career",
+  "tier": 1
+},
+{
+  "id": "q192",
+  "quote": "I don’t think you understand, this is not just a job; it's my life!",
+  "answers": ["mission impossible 2", "mission impossible"],
+  "display": "Mission: Impossible II",
+  "year": 2000,
+  "hint1": "Ethan Hunt",
+  "hint2": "Espionage and action",
+  "tier": 2
+},
+{
+  "id": "q193",
+  "quote": "The sword belongs to me.",
+  "answers": ["conan the barbarian"],
+  "display": "Conan the Barbarian",
+  "year": 1982,
+  "hint1": "Fantasy Action",
+  "hint2": "Mythology and adventure",
+  "tier": 3
+},
+{
+  "id": "q194",
+  "quote": "You can't hold me down. I rise like a bird.",
+  "answers": ["the shawshank redemption", "shawshank", "shawshank redemption"],
+  "display": "The Shawshank Redemption",
+  "year": 1994,
+  "hint1": "Prison drama",
+  "hint2": "Hope and freedom",
+  "tier": 2
+},
+{
+  "id": "q195",
+  "quote": "You're gonna make me eat my own words! ... I'm not gonna do it.",
+  "answers": ["scarface"],
+  "display": "Scarface",
+  "year": 1983,
+  "hint1": "Crime drama",
+  "hint2": "Drug empire and violence",
+  "tier": 3
+},
+{
+  "id": "q196",
+  "quote": "I'm the man, baby. The Man!",
+  "answers": ["iron man"],
+  "display": "Iron Man",
+  "year": 2008,
+  "hint1": "Sci-Fi Action",
+  "hint2": "Superhero origin story",
+  "tier": 2
+},
+{
+  "id": "q197",
+  "quote": "You're all gonna die, anyway. But if you don't try...",
+  "answers": ["the hunger games", "hunger games"],
+  "display": "The Hunger Games",
+  "year": 2012,
+  "hint1": "Science Fiction/Dystopian",
+  "hint2": "Survival and rebellion",
+  "tier": 1
+},
+{
+  "id": "q198",
+  "quote": "It's not the end of the world, you just have to get used to it.",
+  "answers": ["the hunger games", "hunger games"],
+  "display": "The Hunger Games",
+  "year": 2012,
+  "hint1": "Science Fiction/Dystopian",
+  "hint2": "Love and sacrifice",
+  "tier": 2
+},
+{
+  "id": "q199",
+  "quote": "You're not gonna kill me, are you? I'm just a girl. A Mockingjay.",
+  "answers": ["the hunger games", "hunger games"],
+  "display": "The Hunger Games",
+  "year": 2012,
+  "hint1": "Science Fiction/Dystopian",
+  "hint2": "Rebellion and fighting for freedom",
+  "tier": 1
+},
+{
+  "id": "q200",
+  "quote": "I solemnly swear that I am up to no good.",
+  "answers": ["harry potter and the sorcerer's stone", "harry potter", "harry potter and the philosopher's stone"],
+  "display": "Harry Potter and the Sorcerer’s Stone",
+  "year": 2001,
+  "hint1": "Fantasy/Adventure",
+  "hint2": "Chosen one",
+  "tier": 1
+},
+{
+  "id": "q201",
+  "quote": "There's a difference between knowing the path and following it. I prefer to be surprised.",
+  "answers": ["harry potter and the deathly hallows", "harry potter"],
+  "display": "Harry Potter and the Deathly Hallows",
+  "year": 2010,
+  "hint1": "Fantasy/Adventure",
+  "hint2": "Magical education",
+  "tier": 1
+},
+{
+  "id": "q202",
+  "quote": "Power! ... The greatest power of all is the ability to love.",
+  "answers": ["harry potter and the deathly hallows", "harry potter"],
+  "display": "Harry Potter and the Deathly Hallows",
+  "year": 2010,
+  "hint1": "Fantasy/Adventure",
+  "hint2": "Dark magic vs. love",
+  "tier": 1
+},
+{
+  "id": "q203",
+  "quote": "It matters not what someone is born, but what they grow to be.",
+  "answers": ["harry potter and the sorcerer's stone", "harry potter", "harry potter and the philosopher's stone"],
+  "display": "Harry Potter and the Sorcerer’s Stone",
+  "year": 2001,
+  "hint1": "Fantasy/Adventure",
+  "hint2": "Growth and understanding",
+  "tier": 1
+}
   ],
   "perfect_closers": [
     { "quote": "Well, nobody’s perfect.", "source": "Some Like It Hot" },
