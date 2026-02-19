@@ -1933,7 +1933,7 @@
 {
   "id": "q188",
   "quote": "There’s no way out of this one.",
-  "answers": ["cast away"],
+  "answers": ["cast away", "castaway"],
   "display": "Cast Away",
   "year": 2000,
   "hint1": "Lost at sea",
@@ -1946,7 +1946,7 @@
   "answers": ["flash"],
   "display": "Flash",
   "year": 1990,
-  "hint1": "1990s",
+  "hint1": "1990",
   "hint2": "A man who falls for a mermaid",
   "tier": 3
 },
@@ -1956,8 +1956,8 @@
   "answers": ["sleepless in seattle"],
   "display": "Sleepless in Seattle",
   "year": 1993,
-  "hint1": "Romance",
-  "hint2": "A love story with a twist of fate",
+  "hint1": "1992",
+  "hint2": "Romance, A love story with a twist of fate",
   "tier": 2
 },
 {
@@ -1966,7 +1966,7 @@
   "answers": ["jerry maguire"],
   "display": "Jerry Maguire",
   "year": 1996,
-  "hint1": "Romantic comedy-drama",
+  "hint1": "1996",
   "hint2": "Love and career",
   "tier": 1
 },
@@ -1976,8 +1976,8 @@
   "answers": ["mission impossible 2", "mission impossible"],
   "display": "Mission: Impossible II",
   "year": 2000,
-  "hint1": "Ethan Hunt",
-  "hint2": "Espionage and action",
+  "hint1": "2000",
+  "hint2": "Ethan Hunt, Espionage and action",
   "tier": 2
 },
 {
@@ -1986,8 +1986,8 @@
   "answers": ["conan the barbarian"],
   "display": "Conan the Barbarian",
   "year": 1982,
-  "hint1": "Fantasy Action",
-  "hint2": "Mythology and adventure",
+  "hint1": "1982",
+  "hint2": "Fantasy Action, Mythology and adventure",
   "tier": 3
 },
 {
@@ -1996,8 +1996,8 @@
   "answers": ["the shawshank redemption", "shawshank", "shawshank redemption"],
   "display": "The Shawshank Redemption",
   "year": 1994,
-  "hint1": "Prison drama",
-  "hint2": "Hope and freedom",
+  "hint1": "1994",
+  "hint2": "Prison drama, Hope and freedom",
   "tier": 2
 },
 {
@@ -2006,8 +2006,8 @@
   "answers": ["scarface"],
   "display": "Scarface",
   "year": 1983,
-  "hint1": "Crime drama",
-  "hint2": "Drug empire and violence",
+  "hint1": "1983",
+  "hint2": "Crime drama, Drug empire and violence",
   "tier": 3
 },
 {
@@ -2016,8 +2016,8 @@
   "answers": ["iron man"],
   "display": "Iron Man",
   "year": 2008,
-  "hint1": "Sci-Fi Action",
-  "hint2": "Superhero origin story",
+  "hint1": "2008",
+  "hint2": "Sci-Fi Action, Superhero origin story",
   "tier": 2
 },
 {
@@ -2026,7 +2026,7 @@
   "answers": ["the hunger games", "hunger games"],
   "display": "The Hunger Games",
   "year": 2012,
-  "hint1": "Science Fiction/Dystopian",
+  "hint1": "2012",
   "hint2": "Survival and rebellion",
   "tier": 1
 },
@@ -2036,8 +2036,8 @@
   "answers": ["the hunger games", "hunger games"],
   "display": "The Hunger Games",
   "year": 2012,
-  "hint1": "Science Fiction/Dystopian",
-  "hint2": "Love and sacrifice",
+  "hint1": "2012",
+  "hint2": "Science Fiction/Dystopian, Love and sacrifice",
   "tier": 2
 },
 {
@@ -2046,8 +2046,8 @@
   "answers": ["the hunger games", "hunger games"],
   "display": "The Hunger Games",
   "year": 2012,
-  "hint1": "Science Fiction/Dystopian",
-  "hint2": "Rebellion and fighting for freedom",
+  "hint1": "2012",
+  "hint2": "Science Fiction/Dystopian, Rebellion and fighting for freedom",
   "tier": 1
 },
 {
@@ -2056,8 +2056,8 @@
   "answers": ["harry potter and the sorcerer's stone", "harry potter", "harry potter and the philosopher's stone"],
   "display": "Harry Potter and the Sorcerer’s Stone",
   "year": 2001,
-  "hint1": "Fantasy/Adventure",
-  "hint2": "Chosen one",
+  "hint1": "2001",
+  "hint2": "Fantasy/Adventure, Chosen one",
   "tier": 1
 },
 {
@@ -2066,8 +2066,8 @@
   "answers": ["harry potter and the deathly hallows", "harry potter"],
   "display": "Harry Potter and the Deathly Hallows",
   "year": 2010,
-  "hint1": "Fantasy/Adventure",
-  "hint2": "Magical education",
+  "hint1": "2010",
+  "hint2": "Fantasy/Adventure, Magical education",
   "tier": 1
 },
 {
@@ -2076,8 +2076,8 @@
   "answers": ["harry potter and the deathly hallows", "harry potter"],
   "display": "Harry Potter and the Deathly Hallows",
   "year": 2010,
-  "hint1": "Fantasy/Adventure",
-  "hint2": "Dark magic vs. love",
+  "hint1": "2010",
+  "hint2": "Fantasy/Adventure, Dark magic vs. love",
   "tier": 1
 },
 {
@@ -2086,10 +2086,152 @@
   "answers": ["harry potter and the sorcerer's stone", "harry potter", "harry potter and the philosopher's stone"],
   "display": "Harry Potter and the Sorcerer’s Stone",
   "year": 2001,
-  "hint1": "Fantasy/Adventure",
-  "hint2": "Growth and understanding",
+  "hint1": "2001",
+  "hint2": "Fantasy/Adventure, Growth and understanding",
   "tier": 1
-}
+},
+    {
+      "id": "q204",
+      "quote": "You like boats but not the ocean.",
+      "answers": ["groundhog day", "ground hog day"],
+      "display": "Ground Hog day",
+      "year": 1993,
+      "hint1": "1993",
+      "hint2": "On repeat, Bill Murray",
+      "tier": 2
+    },
+    {
+      "id": "q205",
+      "quote": "Congratulations, you are being rescued. Do not resist.",
+      "answers": [
+        "rogue one", "rogue 1", "star wars",
+        "rogue one a star wars story", "rogue one: a star wars story",
+        "star wars rogue one"
+      ],
+      "display": "Rogue One: A Star Wars Story",
+      "year": 2016,
+      "hint1": "2016",
+      "hint2": "Reprogrammed Imperial droid",
+      "tier": 2
+    },
+    {
+      "id": "q206",
+      "quote": "Rebellions are built on hope.",
+      "answers": [
+        "rogue one", "rogue 1", "star wars",
+        "rogue one a star wars story", "rogue one: a star wars story",
+        "star wars rogue one"
+      ],
+      "display": "Rogue One: A Star Wars Story",
+      "year": 2016,
+      "hint1": "2016",
+      "hint2": "Jyn Erso",
+      "tier": 2
+    },
+    {
+      "id": "q207",
+      "quote": "Once you start down the dark path, forever will it dominate your destiny.",
+      "answers": [
+        "empire strikes back", "star wars"
+      ],
+      "display": "Star Wars: Empire Strikes Back",
+      "year": 1980,
+      "hint1": "1980",
+      "hint2": "Yoda",
+      "tier": 1
+    },
+    {
+      "id": "q208",
+      "quote": "As long as the Matrix exists, human race will never be free.",
+      "answers": [
+        "the matrix", "matrix"
+      ],
+      "display": "The Matrix",
+      "year": 1999,
+      "hint1": "1999",
+      "hint2": "Morpheus",
+      "tier": 1
+    },
+    {
+      "id": "q209",
+      "quote": "Ever have the feeling where you are not sure if you're awake or dreaming?",
+      "answers": [
+        "the matrix", "matrix"
+      ],
+      "display": "The Matrix",
+      "year": 1999,
+      "hint1": "1999",
+      "hint2": "Neo",
+      "tier": 1
+    },
+    {
+      "id": "q210",
+      "quote": "Sooner or later you’re going to realize, just as I did, there’s a difference between knowing the path and walking the path.",
+      "answers": [
+        "the matrix", "matrix"
+      ],
+      "display": "The Matrix",
+      "year": 1999,
+      "hint1": "1999",
+      "hint2": "Morpheus",
+      "tier": 2
+    },
+    {
+      "id": "q211",
+      "quote": "The answer is out there, Neo, and it’s looking for you, and it will find you if you want it to.",
+      "answers": [
+        "the matrix", "matrix"
+      ],
+      "display": "The Matrix",
+      "year": 1999,
+      "hint1": "1999",
+      "hint2": "Trinity",
+      "tier": 2
+    },
+    {
+      "id": "q212",
+      "quote": "The purpose of life is to end.",
+      "answers": [
+        "the matrix", "matrix"
+      ],
+      "display": "The Matrix",
+      "year": 1999,
+      "hint1": "1999",
+      "hint2": "Agent Smith",
+      "tier": 2
+    },
+    {
+      "id": "q213",
+      "quote": "You are a plague, and we are the cure.",
+      "answers": [
+        "the matrix", "matrix"
+      ],
+      "display": "The Matrix",
+      "year": 1999,
+      "hint1": "1999",
+      "hint2": "Agent Smith",
+      "tier": 3
+    },
+    {
+      "id": "q214",
+      "quote": "Are you telling me you built a time machine out of a Delorian?",
+      "answers": ["back to the future"],
+      "display": "Back to the Future",
+      "year": 1985,
+      "hint1": "1985",
+      "hint2": "Doc Brown",
+      "tier": 1
+    },
+    {
+      "id": "q215",
+      "quote": "No one should know too much about their own destiny.",
+      "answers": ["back to the future"],
+      "display": "Back to the Future",
+      "year": 1985,
+      "hint1": "1985",
+      "hint2": "Emmit Brown",
+      "tier": 2
+    }
   ],
   "perfect_closers": [
     { "quote": "Well, nobody’s perfect.", "source": "Some Like It Hot" },
