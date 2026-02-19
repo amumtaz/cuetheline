@@ -3,13 +3,36 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cue The Line – Daily Movie Quotes Trivia Guessing Game</title>
+  <title>Daily Movie Quote Trivia Game – Guess the Film | Cue The Line</title>
   <meta name="description" 
-        content="Cue The Line is a daily movie quotes trivia game. Guess five iconic movie lines, get your score, and share it with friends. New quotes every day.">
+  content="Play a free daily movie quote trivia guessing game. Guess the film from 5 iconic lines, use optional hints, get your score, and share. New quotes every day." />
+  <link rel="canonical" href="https://cuetheline.com/" />
   <link rel="stylesheet" href="style.css" />
   <script data-goatcounter="https://cuetheline.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🎬</text></svg>">
+  <meta property="og:title" content="Daily Movie Quote Trivia Game – Guess the Film | Cue The Line" />
+  <meta property="og:description" content="Guess the film from 5 iconic lines each day. Optional hints. Score + share." />
+  <meta property="og:url" content="https://cuetheline.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://cuetheline.com/assets/og.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Daily Movie Quote Trivia Game – Guess the Film | Cue The Line" />
+  <meta name="twitter:description" content="Guess the film from 5 iconic lines each day. Optional hints. Score + share." />
+  <meta name="twitter:image" content="https://cuetheline.com/assets/og.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Game",
+    "name": "Cue The Line",
+    "description": "A daily movie quote guessing game where players guess the film from iconic lines.",
+    "applicationCategory": "Game",
+    "genre": "Trivia",
+    "operatingSystem": "Web",
+    "url": "https://cuetheline.com/"
+  }
+  </script>
 </head>
 <body>
   <main class="wrap">
@@ -21,8 +44,9 @@
           class="logo"
         />
         <div class="brandText">
-          <h1 id="title">Cue The Line</h1>
-          <p class="sub" id="subtitle">Daily movie-quote challenge</p>
+          <div class="siteName">Cue The Line</div>
+            <h1 class="seoH1">Daily Movie Quote Guessing Game</h1>
+            <p class="sub" id="subtitle">Guess the film from 5 lines each day</p>
         </div>
       </div>
 
@@ -78,7 +102,8 @@
     </section>
 
 <p class="seoText">
-  Cue The Line is a free daily movie quotes trivia guessing game where players try to identify films from iconic lines of dialogue. Each day features five quotes from classic and modern movies. 
+  Cue The Line is a free daily movie quote trivia guessing game. Guess the film from five iconic lines of dialogue,
+  use optional hints, then share your score. New quotes drop every day—from classics to modern favorites.
 </p>
 
  <footer class="foot">
@@ -115,7 +140,7 @@
   <div class="dlg">
     <h3>About Cue The Line</h3>
 
-    <p><b>Cue The Line</b> is a small daily game for people who love movie dialogue.</p>
+    <p><b>Cue The Line</b> is a popular daily game for people who love movie dialogue.</p>
 
     <p>
       A quiet, daily challenge that rewards curiosity and memory — and grows with you over time. Everyone gets the same five quotes each day. Try to answer all five as best as you can. You’ll get a score at the end — and you can share it to challenge your friends and colleagues. 
@@ -141,23 +166,24 @@
   <script src="app.js"></script>
 
 
-
-</body>
 <script>
-// Footer About link
 const aboutLink = document.getElementById("aboutLink");
-if (aboutLink) {
+const aboutDialog = document.getElementById("aboutDialog");
+const closeAboutBtn = document.getElementById("closeAboutBtn");
+
+if (aboutLink && aboutDialog) {
   aboutLink.addEventListener("click", (e) => {
     e.preventDefault();
     aboutDialog.showModal();
   });
 }
 
-const closeAboutBtn = document.getElementById("closeAboutBtn");
-if (closeAboutBtn) {
+if (closeAboutBtn && aboutDialog) {
   closeAboutBtn.addEventListener("click", () => {
     aboutDialog.close();
   });
 }
 </script>
+</body>
+
 </html>
