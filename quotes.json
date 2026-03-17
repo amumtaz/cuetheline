@@ -2231,6 +2231,116 @@
       "hint1": "1985",
       "hint2": "Emmit Brown",
       "tier": 2
+    },
+        {
+      "id": "q216",
+      "quote": "My name is Junglepussy. This is what power looks like. ",
+      "answers": ["one battle after another"],
+      "display": "One Battle After Another",
+      "year": 2025,
+      "hint1": "2025",
+      "hint2": "Bank Robbery",
+      "tier": 1
+    },
+    {
+      "id": "q217",
+      "quote": "You know what freedom is? No fear. Just like Tom ... Cruise.",
+      "answers": ["one battle after another"],
+      "display": "One Battle After Another",
+      "year": 2025,
+      "hint1": "2025",
+      "hint2": "Sensei Sergio St. Carlos",
+      "tier": 2
+    },
+    {
+      "id": "q218",
+      "quote": "Freedom isn't won in the streets—it's enforced from the barracks.",
+      "answers": ["one battle after another"],
+      "display": "One Battle After Another",
+      "year": 2025,
+      "hint1": "2025",
+      "hint2": "Colonel Steven J. Lockjaw",
+      "tier": 1
+    },
+    {
+      "id": "q219",
+      "quote": "One more battle, and I'll trade this life for a quiet grave.",
+      "answers": ["one battle after another"],
+      "display": "One Battle After Another",
+      "year": 2025,
+      "hint1": "2025",
+      "hint2": "Colonel Steven J. Lockjaw",
+      "tier": 3
+    },
+    {
+      "id": "q220",
+      "quote": "You know, I don't remember that part. Let's not nitpick over the passwords.",
+      "answers": ["one battle after another"],
+      "display": "One Battle After Another",
+      "year": 2025,
+      "hint1": "2025",
+      "hint2": "Leonardo DiCaprio",
+      "tier": 1
+    },
+    {
+      "id": "q221",
+      "quote": "Freedom is a funny thing, isn't it? When you have it, you don't appreciate it, and when you miss it, it's gone.",
+      "answers": ["one battle after another"],
+      "display": "One Battle After Another",
+      "year": 2025,
+      "hint1": "2025",
+      "hint2": "Leonardo DiCaprio",
+      "tier": 2
+    },   
+    {
+      "id": "q222",
+      "quote": "I need a weapon, man. All you've got are goddamn nunchuks here.",
+      "answers": ["one battle after another"],
+      "display": "One Battle After Another",
+      "year": 2025,
+      "hint1": "2025",
+      "hint2": "Leonardo DiCaprio",
+      "tier": 2
+    },  
+    {
+      "id": "q223",
+      "quote": "Lockjaw's orders: Fight dirty, win clean—ha!",
+      "answers": ["one battle after another"],
+      "display": "One Battle After Another",
+      "year": 2025,
+      "hint1": "2025",
+      "hint2": "Sean Penn",
+      "tier": 3
+    }, 
+    {
+      "id": "q224",
+      "quote": "Come tomorrow, I find out about you playing in one of these, boy, I'll kill you myself.",
+      "answers": ["sinners"],
+      "display": "Sinners",
+      "year": 2025,
+      "hint1": "2025",
+      "hint2": "Smoke threatening Sammie Moore",
+      "tier": 2
+    },
+    {
+      "id": "q225",
+      "quote": "I play, and I get as much corn liquor as I can drink. A sinner like me, I can't ask for more than that.",
+      "answers": ["sinners"],
+      "display": "Sinners",
+      "year": 2025,
+      "hint1": "2025",
+      "hint2": "Stack with Delta Slim on simple pleasures",
+      "tier": 1
+    },
+    {
+      "id": "q226",
+      "quote": "Sorry I couldn't keep you safe. Stack: Don't be sorry, you always did.",
+      "answers": ["sinners"],
+      "display": "Sinners",
+      "year": 2025,
+      "hint1": "2025",
+      "hint2": "Smoke to Stack (final moment)",
+      "tier": 3
     }
   ],
   "perfect_closers": [
