@@ -31,6 +31,8 @@ const shareCardEl = document.getElementById("shareCard");
 const shareBtn = document.getElementById("shareBtn");
 const copyBtn = document.getElementById("copyBtn");
 const runIdEl = document.getElementById("runId");
+const streakPill = document.getElementById("streakPill");
+const bestStreakPill = document.getElementById("bestStreakPill");
 
 const yesterdayCard = document.getElementById("yesterdayCard");
 const yesterdayList = document.getElementById("yesterdayList");
@@ -157,6 +159,7 @@ function buildShareCard(stateForToday) {
   const marks = stateForToday.marks.join("");
   const streak = stateForToday.correctCount;
   const hintsUsed = stateForToday.hintsUsed;
+  const streakState = getStreakState();
 
   let line2 = "";
   if (streak === 5) {
@@ -170,6 +173,7 @@ function buildShareCard(stateForToday) {
     marks,
     line2,
     `Hints used: ${hintsUsed}`,
+    `🔥 Streak: ${streakState.current || 0}`,
     "",
     `Take the movie trivia challenge: ${PLAY_URL}`
   ].join("\n");
@@ -206,13 +210,73 @@ function getTodayState() {
   return state[today];
 }
 
-function getYesterdayKey() {
-  const d = new Date();
+function getPreviousDayKey(dateKey) {
+  const d = new Date(dateKey + "T00:00:00");
   d.setDate(d.getDate() - 1);
   const yyyy = d.getFullYear();
   const mm = String(d.getMonth() + 1).padStart(2, "0");
   const dd = String(d.getDate()).padStart(2, "0");
   return `${yyyy}-${mm}-${dd}`;
+}
+
+function getYesterdayKey() {
+  return getPreviousDayKey(todayKeyLocal());
+}
+
+function getStreakState() {
+  if (!state.__streaks) {
+    state.__streaks = {
+      current: 0,
+      best: 0,
+      lastCompletedDate: null
+    };
+  }
+  return state.__streaks;
+}
+
+function renderStreaks() {
+  const streak = getStreakState();
+  if (streakPill) {
+    streakPill.textContent = `🔥 Streak: ${streak.current || 0}`;
+  }
+  if (bestStreakPill) {
+    bestStreakPill.textContent = `Best: ${streak.best || 0}`;
+  }
+}
+
+function updateStreakOnCompletion(todayKey) {
+  const streak = getStreakState();
+  if (streak.lastCompletedDate === todayKey) {
+    return streak;
+  }
+  const yesterdayKey = getPreviousDayKey(todayKey);
+  if (streak.lastCompletedDate === yesterdayKey) {
+    streak.current += 1;
+  } else {
+    streak.current = 1;
+  }
+  streak.best = Math.max(streak.best || 0, streak.current);
+  streak.lastCompletedDate = todayKey;
+  saveState(state);
+  track("streak_updated", {
+    current: streak.current,
+    best: streak.best
+  });
+  return streak;
+}
+
+function renderCompletedState(tState) {
+  const streak = getStreakState();
+  resultArea.hidden = false;
+  resultMsg.innerHTML = `
+    <div><b>Here’s how you did today:</b></div>
+    <div style="margin-top:6px">Score: ${tState.correctCount} / 5</div>
+    <div style="margin-top:6px">Current streak: ${streak.current || 0} 🔥</div>
+    <div>Best streak: ${streak.best || 0}</div>
+    <div class="returnHint">
+      Tomorrow, today’s answers unlock above — and you’ll get a new set of 5 quotes.
+    </div>
+  `;
 }
 
 function renderYesterdayIfAvailable() {
@@ -333,6 +397,7 @@ async function init() {
   runIdEl.textContent = `QuoteRun #${runId}`;
 
   const tState = getTodayState();
+  renderStreaks();
 
   // Determine daily set deterministically from date.
   dailySet = pickDeterministicDailySet(pool, dayIndex);
@@ -351,18 +416,10 @@ async function init() {
     // Build "marks" display
     quoteText.textContent = "Today’s run is complete.";
     //progressBadge.textContent = `${clamp(tState.marks.length, 0, 5)} / 5`;
-    resultArea.hidden = false;
-
-    resultMsg.innerHTML = `
-      <div><b>Here’s how you did today:</b></div>
-      <div style="margin-top:6px">Score: ${tState.correctCount} / 5</div>
-      <div class="returnHint">
-        Tomorrow, today’s answers unlock above — and you’ll get a new set of 5 quotes.
-      </div>
-    `;
-
+    renderCompletedState(tState);
     shareCardEl.textContent = buildShareCard(tState);
     renderYesterdayIfAvailable();
+    renderStreaks();
     return;
 
   }
@@ -371,6 +428,7 @@ async function init() {
   currentIdx = tState.marks.length; //  • Marks length = how many questions attempted
   updateUIForQuote(tState);
   renderYesterdayIfAvailable();
+  renderStreaks();
 }
 
 // ------- Events -------
@@ -493,6 +551,8 @@ function finishRun(tState) {
   tState.completed = true;
   tState.completedAt = Date.now();
   saveState(state);
+  const streak = updateStreakOnCompletion(today);
+  renderStreaks();
 
   track("run_completed", {
     score: tState.correctCount,
@@ -507,15 +567,9 @@ function finishRun(tState) {
   progressBadge.hidden = true;
 
   // Result message (v0.2 copy)
-  resultArea.hidden = false;
-  resultMsg.innerHTML = `
-    <div><b>Here’s how you did today:</b></div>
-    <div style="margin-top:6px">Score: ${tState.correctCount} / 5</div>
-    <div class="returnHint">
-      Tomorrow, today’s answers unlock above — and you’ll get a new set of 5 quotes.
-    </div>
-  `;
+  renderCompletedState(tState);
 
   shareCardEl.textContent = buildShareCard(tState);
   renderYesterdayIfAvailable();
+  return streak;
 }
