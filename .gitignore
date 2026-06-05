@@ -1,3 +1,6 @@
 #bash
 *.sh
 *.ods
+
+/docs
+*.md

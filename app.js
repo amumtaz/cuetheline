@@ -12,6 +12,7 @@
 
 
 const STORAGE_KEY = "mq_v02_state";
+const RETENTION_STORAGE_KEY = "ctl_retention_v1";
 const START_DATE_UTC = "2025-01-01"; // any fixed anchor date
 
 // ------- DOM -------
@@ -155,6 +156,163 @@ function saveState(state) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
 }
 
+function loadRetentionState() {
+  try {
+    const raw = localStorage.getItem(RETENTION_STORAGE_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+function saveRetentionState(retentionState) {
+  localStorage.setItem(RETENTION_STORAGE_KEY, JSON.stringify(retentionState));
+}
+
+function diffLocalDays(startDateKey, endDateKey) {
+  const start = new Date(startDateKey + "T00:00:00");
+  const end = new Date(endDateKey + "T00:00:00");
+  const ms = end - start;
+  return Math.floor(ms / (1000 * 60 * 60 * 24));
+}
+
+function isValidDateKey(dateKey) {
+  return /^\d{4}-\d{2}-\d{2}$/.test(dateKey);
+}
+
+function getRetentionState() {
+  const todayKey = todayKeyLocal();
+  const existing = loadRetentionState();
+  if (existing && typeof existing === "object") {
+    if (!existing.sent || typeof existing.sent !== "object") {
+      existing.sent = {};
+    }
+    for (const key of [
+      "visitor_first_seen",
+      "visitor_returned",
+      "retention_d1",
+      "retention_d7",
+      "retention_d30",
+      "streak_reached_3",
+      "streak_reached_7",
+      "streak_reached_14",
+      "streak_reached_30"
+    ]) {
+      if (typeof existing.sent[key] !== "boolean") {
+        existing.sent[key] = false;
+      }
+    }
+    if (!isValidDateKey(existing.firstSeenDate)) {
+      existing.firstSeenDate = todayKey;
+    }
+    if (!isValidDateKey(existing.lastSeenDate)) {
+      existing.lastSeenDate = todayKey;
+    }
+    return existing;
+  }
+
+  return {
+    firstSeenDate: todayKey,
+    lastSeenDate: todayKey,
+    sent: {
+      visitor_first_seen: false,
+      visitor_returned: false,
+      retention_d1: false,
+      retention_d7: false,
+      retention_d30: false,
+      streak_reached_3: false,
+      streak_reached_7: false,
+      streak_reached_14: false,
+      streak_reached_30: false
+    }
+  };
+}
+
+function markRetentionEvent(retentionState, eventName, payload = {}) {
+  if (!retentionState.sent) {
+    retentionState.sent = {};
+  }
+  if (retentionState.sent[eventName]) {
+    return false;
+  }
+  track(eventName, payload);
+  retentionState.sent[eventName] = true;
+  return true;
+}
+
+function maybeEmitRetentionMilestoneEvents(retentionState) {
+  const todayKey = todayKeyLocal();
+  const firstSeenDate = retentionState.firstSeenDate || todayKey;
+  const ageDays = diffLocalDays(firstSeenDate, todayKey);
+
+  if (!retentionState.firstSeenDate) {
+    retentionState.firstSeenDate = todayKey;
+  }
+
+  if (!retentionState.lastSeenDate) {
+    retentionState.lastSeenDate = todayKey;
+  }
+
+  if (ageDays === 0) {
+    markRetentionEvent(retentionState, "visitor_first_seen", { first_seen_date: firstSeenDate });
+  } else {
+    if (retentionState.lastSeenDate !== todayKey) {
+      markRetentionEvent(retentionState, "visitor_returned", {
+        first_seen_date: firstSeenDate,
+        return_date: todayKey
+      });
+    }
+
+    if (ageDays === 1) {
+      markRetentionEvent(retentionState, "retention_d1", {
+        first_seen_date: firstSeenDate,
+        return_date: todayKey
+      });
+    }
+    if (ageDays === 7) {
+      markRetentionEvent(retentionState, "retention_d7", {
+        first_seen_date: firstSeenDate,
+        return_date: todayKey
+      });
+    }
+    if (ageDays === 30) {
+      markRetentionEvent(retentionState, "retention_d30", {
+        first_seen_date: firstSeenDate,
+        return_date: todayKey
+      });
+    }
+  }
+
+  retentionState.lastSeenDate = todayKey;
+  saveRetentionState(retentionState);
+  return retentionState;
+}
+
+function maybeEmitStreakMilestones(retentionState, streak) {
+  const milestones = [
+    ["streak_reached_3", 3],
+    ["streak_reached_7", 7],
+    ["streak_reached_14", 14],
+    ["streak_reached_30", 30]
+  ];
+
+  let changed = false;
+  for (const [eventName, threshold] of milestones) {
+    if (streak.current >= threshold) {
+      const emitted = markRetentionEvent(retentionState, eventName, {
+        current: streak.current,
+        best: streak.best,
+        threshold
+      });
+      changed = changed || emitted;
+    }
+  }
+
+  if (changed) {
+    saveRetentionState(retentionState);
+  }
+}
+
 function buildShareCard(stateForToday) {
   const marks = stateForToday.marks.join("");
   const streak = stateForToday.correctCount;
@@ -192,6 +350,7 @@ let dailySet = [];
 let currentIdx = 0;
 
 let state = loadState();
+let retentionState = getRetentionState();
 
 function getTodayState() {
   if (!state[today]) {
@@ -398,6 +557,7 @@ async function init() {
 
   const tState = getTodayState();
   renderStreaks();
+  retentionState = maybeEmitRetentionMilestoneEvents(retentionState);
 
   // Determine daily set deterministically from date.
   dailySet = pickDeterministicDailySet(pool, dayIndex);
@@ -553,6 +713,7 @@ function finishRun(tState) {
   saveState(state);
   const streak = updateStreakOnCompletion(today);
   renderStreaks();
+  maybeEmitStreakMilestones(retentionState, streak);
 
   track("run_completed", {
     score: tState.correctCount,

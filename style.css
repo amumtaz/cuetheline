@@ -351,13 +351,15 @@ button#copyBtn:hover {
   color: var(--ink-muted-light);
 }
 
-.foot a {
+.foot a,
+.foot .footerLink {
   color: var(--card-lime);
   text-decoration: none;
   font-weight: 500;
 }
 
-.foot a:hover {
+.foot a:hover,
+.foot .footerLink:hover {
   text-decoration: underline;
 }
 
@@ -374,19 +376,64 @@ dialog::backdrop {
 }
 
 dialog .dlg {
-  background: var(--ink-dark);
-  color: var(--ink-light);
+  background: linear-gradient(
+    180deg,
+    #caff2a 0%,
+    #dfff6a 100%
+  );
+  color: var(--ink-dark);
   border-radius: var(--radius-lg);
-  padding: 18px;
+  padding: 24px;
+  width: min(720px, calc(100vw - 32px));
+  max-height: min(80vh, 820px);
+  overflow: auto;
+  box-shadow: 0 20px 50px rgba(0,0,0,.4);
 }
 
 dialog .dlg h3 {
-  color: var(--card-lime);
+  color: var(--ink-dark);
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  margin: 0 0 12px;
+}
+
+dialog .dlg p,
+dialog .dlg li {
+  color: var(--ink-dark);
+  line-height: 1.55;
+}
+
+dialog .dlg ul {
+  padding-left: 20px;
+  margin: 0 0 16px;
+}
+
+dialog .dlg p {
+  margin: 0 0 12px;
+}
+
+dialog .dlg .muted {
+  color: var(--ink-muted-dark);
 }
 
 .dlgBtns {
   text-align: right;
   margin-top: 12px;
+}
+
+dialog .dlg button {
+  background: transparent;
+  border: none;
+  color: var(--ink-dark);
+  padding: 0;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+dialog .dlg button:hover {
+  text-decoration: underline;
 }
 
 .seoText {
