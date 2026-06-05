@@ -28,6 +28,7 @@ const hint2Box = document.getElementById("hint2Box");
 const hintUsedEl = document.getElementById("hintUsed");
 const resultArea = document.getElementById("resultArea");
 const resultMsg = document.getElementById("resultMsg");
+const sharePrompt = document.getElementById("sharePrompt");
 const shareCardEl = document.getElementById("shareCard");
 const shareBtn = document.getElementById("shareBtn");
 const copyBtn = document.getElementById("copyBtn");
@@ -333,8 +334,31 @@ function buildShareCard(stateForToday) {
     `Hints used: ${hintsUsed}`,
     `🔥 Streak: ${streakState.current || 0}`,
     "",
+    "Can your friends beat your score?",
+    "",
     `Take the movie trivia challenge: ${PLAY_URL}`
   ].join("\n");
+}
+
+async function copyShareText(text) {
+  if (navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+
+  const temp = document.createElement("textarea");
+  temp.value = text;
+  temp.setAttribute("readonly", "true");
+  temp.style.position = "fixed";
+  temp.style.opacity = "0";
+  temp.style.pointerEvents = "none";
+  document.body.appendChild(temp);
+  temp.select();
+  const copied = document.execCommand("copy");
+  document.body.removeChild(temp);
+  if (!copied) {
+    throw new Error("Copy failed");
+  }
 }
 
 // ------- App -------
@@ -361,6 +385,7 @@ function getTodayState() {
       hintsUsed: 0,
       hint1Shown: {},
       hint2Shown: {},
+      sharePromptSeen: false,
       completed: false,     // ✅ NEW
       completedAt: null,    // ✅ NEW
       setIds: []
@@ -427,6 +452,14 @@ function updateStreakOnCompletion(todayKey) {
 function renderCompletedState(tState) {
   const streak = getStreakState();
   resultArea.hidden = false;
+  if (!tState.sharePromptSeen) {
+    track("share_prompt_seen", {
+      score: tState.correctCount,
+      streak: streak.current || 0
+    });
+    tState.sharePromptSeen = true;
+    saveState(state);
+  }
   resultMsg.innerHTML = `
     <div><b>Here’s how you did today:</b></div>
     <div style="margin-top:6px">Score: ${tState.correctCount} / 5</div>
@@ -436,6 +469,9 @@ function renderCompletedState(tState) {
       Tomorrow, today’s answers unlock above — and you’ll get a new set of 5 quotes.
     </div>
   `;
+  if (sharePrompt) {
+    sharePrompt.hidden = false;
+  }
 }
 
 function renderYesterdayIfAvailable() {
@@ -669,27 +705,37 @@ answerInput.addEventListener("keydown", (e) => {
 });
 
 shareBtn.addEventListener("click", async () => {
-  const tState = getTodayState();
   const text = shareCardEl.textContent;
   track("share_clicked");
   try {
     if (navigator.share) {
       await navigator.share({ text });
+      track("share_success", { method: "native" });
+      setStatus("Shared!");
     } else {
-      await navigator.clipboard.writeText(text);
-      setStatus("Copied to clipboard.");
+      await copyShareText(text);
+      track("share_success", { method: "clipboard_fallback" });
+      setStatus("Copied! Paste it anywhere.");
     }
-  } catch {
-    // ignore
+  } catch (error) {
+    if (error && error.name === "AbortError") {
+      setStatus("Share canceled.");
+      return;
+    }
+    track("share_failed", { method: navigator.share ? "native" : "clipboard_fallback" });
+    setStatus("Couldn’t share. Try Copy Result instead.");
   }
 });
 
 copyBtn.addEventListener("click", async () => {
   const text = shareCardEl.textContent;
+  track("copy_clicked");
   try {
-    await navigator.clipboard.writeText(text);
-    setStatus("Copied to clipboard.");
+    await copyShareText(text);
+    track("share_success", { method: "copy_button" });
+    setStatus("Copied! Paste it anywhere.");
   } catch {
+    track("share_failed", { method: "copy_button" });
     setStatus("Could not copy. Select the text and copy manually.");
   }
 });
